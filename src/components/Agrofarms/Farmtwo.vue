@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md bg-negative">
+  <div class="q-pa-md bg-primary">
     <div class="top container">
       <div class="row align-c text-c">
         <div class="col col-md-6 col-sm-12 col-xs-12 q-pr-xl q-pb-xl">
@@ -14,13 +14,15 @@
           </h2>
 
           <p style="font-size: 20px" class="text-body1 text-secondary q-mt-lg">
-            Choose a comfortable plan of your choice, from #300, #500 or#1000
-            daily... You can even save for several days at once.
+            As a well consumed staple food in Nigeria, we have over 500 hectares
+            of rice farms where mechanized large scale farming is practiced. We
+            also run an outgrowers scheme in rice production to help farmers get
+            premium value for the efforts.
           </p>
 
-          <button class="bg-secondary text-primary btn btn-white">
+          <!-- <button class="bg-secondary text-primary btn btn-white">
             Learn More
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

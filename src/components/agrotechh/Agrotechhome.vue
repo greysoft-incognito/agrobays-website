@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-my-xl home">
+  <div class="q-pa-md home">
     <div class="row align-c text-c show container">
       <div class="col-md-12 col-sm-12 cen col-xs-12">
         <h2
@@ -10,9 +10,9 @@
         </h2>
 
         <p style="font-size: 25px" class="text-body1 text-secondary q-mt-lg">
-          Amazing how little drops of water make <br />
-          a mighty ocean? Get food every 30days <br />
-          you never knew you were saving for!
+          Our passion is modern agriculture in unparallelled space. <br />
+          We are constantly redefining farming and improving rural farming
+          practice.
         </p>
 
         <button class="text-secondary btn">Create an Account</button>
@@ -59,7 +59,7 @@ export default {};
 .home {
   position: relative;
   height: 100vh;
-  background: url("/images/trac.jpg") center center/cover no-repeat;
+  background: url("/images/agrotech1.jpeg") center center/cover no-repeat;
   z-index: 1;
   background-blend-mode: multiply;
 }

@@ -1,65 +1,45 @@
 <template>
-  <div class="q-pa-md q-my-xl home">
+  <div :style="`background: url(${background})`" class="q-pa-md home">
     <div class="row align-c text-c show">
       <div class="col-md-12 col-sm-12 col-xs-12">
         <h2
           style="font-size: 50px"
           class="text-h3 q-my-lg text-weight-bold text-center text-secondary"
         >
-          AgroFarms
+          {{ title }}
         </h2>
 
         <p
           style="font-size: 25px"
           class="text-body1 text-center text-secondary q-mt-lg"
         >
-          Agrofarm provides farmers with lucrative opportunities <br />
-          and access to resources, local and international markets.
+          {{ desc }}
         </p>
 
-        <div class="input-email q-mt-lg">
+        <!-- <div class="input-email q-mt-lg">
           <div class="input q-px-lg">
             <input placeholder="Enter your email" type="text" />
             <button class="text-secondary">Register</button>
           </div>
-        </div>
+        </div> -->
       </div>
-      <!-- <div class="boxes col-md-12 q-my-xl">
-        <div class="boxes-wrap container">
-          <div class="box">
-            <p>AgroFoods</p>
-          </div>
-          <div class="box">
-            <p>AgroFarms</p>
-          </div>
-          <div class="box">
-            <p>AgroTech</p>
-          </div>
-
-          <div class="box">
-            <p>AgroInvest</p>
-          </div>
-        </div>
-      </div> -->
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["title", "desc", "background"],
+};
 </script>
 
 <style scoped>
 .home {
   position: relative;
-  height: 100vh;
-  background: url("/images/ginger1.jpg") center center/cover no-repeat;
+  height: 80vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
   z-index: 1;
 }
 
@@ -78,22 +58,20 @@ export default {};
   right: 0;
   width: 100%;
   height: 100%;
-
   background: rgba(0, 0, 0, 0.5);
-  /* background: #2b945b; */
   mix-blend-mode: multiply;
   opacity: 0.95;
   z-index: 1;
 }
 
-/* .show {
-  position: relative;
-  z-index: 1;
-} */
-
 .align-c {
   display: flex;
   align-items: center;
+}
+
+p {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 h5 {
@@ -132,30 +110,6 @@ h5 {
 .img {
   width: 90%;
 }
-/* 
-.boxes-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-
-.boxes-wrap .box {
-  height: 100%;
-  border: 2px solid #fff;
-  padding: 0.45rem 1.5rem;
-  margin: 1rem;
-}
-.boxes-wrap .box p {
-  text-align: center;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin: 0 !important;
-  color: #fff;
-} */
 
 @media (max-width: 400px) {
   .input-email .input {

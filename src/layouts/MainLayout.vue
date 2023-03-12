@@ -1,9 +1,14 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header reveal elevated class="bg-secondary text-white">
-      <q-toolbar>
+    <q-header
+      v-if="$router.currentRoute.value.path !== '/dashboard'"
+      reveal
+      elevated
+      class="bg-secondary text-white"
+    >
+      <div class="row items-center">
         <q-toolbar-title>
-          <img class="logo" src="/images/agrobase.png" />
+          <img class="logo q-pl-md" src="/images/logo1.svg" /> <br />
         </q-toolbar-title>
         <q-tabs narrow-indicator dense active-color="primary">
           <q-route-tab
@@ -11,74 +16,65 @@
             sm
             ripple
             no-caps
-            class="gt-sm text-dark q-mx-sm"
+            class="gt-sm text-dark"
             to="/"
+            exact
+          />
+          <q-route-tab
+            label="Livestock"
+            ripple
+            no-caps
+            class="gt-sm text-dark"
+            to="/livestock"
             exact
           />
           <q-route-tab
             label="AgroFoods"
             ripple
             no-caps
-            class="gt-sm text-dark q-mx-sm"
+            class="gt-sm text-dark"
             to="/agrofoods"
             exact
           />
 
           <q-route-tab
-            label="AgroFarms"
+            label="AgroFarm"
             ripple
             no-caps
-            class="gt-sm text-dark q-mx-sm"
+            class="gt-sm text-dark"
             to="/agrofarms"
             exact
           />
           <q-route-tab
-            label="AgroTech"
+            label="Crop Monitoring"
             ripple
             no-caps
-            class="gt-sm text-dark q-mx-sm"
-            to="/agrotech"
+            class="gt-sm text-dark"
+            to="/CropMonitoring"
             exact
           />
-          <q-route-tab
+          <!-- <q-route-tab
             label="AgroInvest"
             ripple
             no-caps
-            class="gt-sm text-dark q-mx-sm"
+            class="gt-sm text-dark "
             to="/agroinvest"
             exact
-          />
+          /> -->
         </q-tabs>
-        <q-tabs class="login bg-negative" dense>
+        <q-tabs class="login bg-primary" dense>
           <div class="log">
             <q-route-tab
-              label="Login"
+              label="Download App"
               ripple
               no-caps
-              class="gt-sm text-secondary q-mx-sm"
-              to="/login"
+              class="gt-sm row nowrap items-center text-secondary"
+              href=""
               exact
-            />
+              ><i class="fa-solid fa-mobile"></i
+            ></q-route-tab>
           </div>
-
-          <q-route-tab
-            label="Register"
-            ripple
-            no-caps
-            class="gt-sm register text-secondary q-mx-sm"
-            to="/register"
-            exact
-          />
         </q-tabs>
-
-        <!-- <q-btn
-          style="color: black"
-          dense
-          flat
-          round
-          icon="menu"
-          @click="toggleRightDrawer"
-        /> -->
 
         <div class="q-pa-sm lt-md">
           <q-btn
@@ -93,45 +89,63 @@
               <q-list>
                 <q-item clickable v-close-popup>
                   <q-item-section>
-                    <q-item-label
-                      ><q-btn
+                    <q-item-label>
+                      <q-btn
                         stretch
                         flat
                         label="Home"
                         to="/"
                         no-caps
                         size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
+                        class=""
+                      />
+                    </q-item-label>
                   </q-item-section>
                 </q-item>
                 <q-item clickable v-close-popup>
                   <q-item-section>
-                    <q-item-label
-                      ><q-btn
+                    <q-item-label>
+                      <q-btn
                         stretch
                         flat
-                        label="AgroFoods"
-                        to="/agrofoods"
+                        label="Livestock"
+                        to="/livestock"
                         no-caps
                         size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
+                        class=""
+                      />
+                    </q-item-label>
                   </q-item-section>
                 </q-item>
 
                 <q-item clickable v-close-popup>
                   <q-item-section>
-                    <q-item-label
-                      ><q-btn
+                    <q-item-label>
+                      <q-btn
+                        stretch
+                        flat
+                        label="Livestock"
+                        to="/agrofarms"
+                        no-caps
+                        size="md"
+                        class=""
+                      />
+                    </q-item-label>
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-close-popup>
+                  <q-item-section>
+                    <q-item-label>
+                      <q-btn
                         stretch
                         flat
                         label="AgroFarms"
                         to="/agrofarms"
                         no-caps
                         size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
+                        class=""
+                      />
+                    </q-item-label>
                   </q-item-section>
                 </q-item>
 
@@ -141,56 +155,25 @@
                       ><q-btn
                         stretch
                         flat
-                        label="AgroTech"
-                        to="/agrotech"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="AgroInvest"
+                        label="Crop Monitoring"
                         to="/agroinvest"
                         no-caps
                         size="md"
-                        class="q-mx-sm"
+                        class=""
                     /></q-item-label>
                   </q-item-section>
                 </q-item>
-
                 <q-item clickable v-close-popup>
                   <q-item-section>
                     <q-item-label
                       ><q-btn
                         stretch
                         flat
-                        label="Login"
-                        to="/login"
+                        label="Download App"
+                        to="/agroinvest"
                         no-caps
                         size="md"
-                        class="q-mx-sm"
-                    /></q-item-label>
-                  </q-item-section>
-                </q-item>
-
-                <q-item clickable v-close-popup>
-                  <q-item-section>
-                    <q-item-label
-                      ><q-btn
-                        stretch
-                        flat
-                        label="Register"
-                        to="/register"
-                        no-caps
-                        size="md"
-                        class="q-mx-sm"
+                        class=""
                     /></q-item-label>
                   </q-item-section>
                 </q-item>
@@ -198,7 +181,7 @@
             </q-menu>
           </q-btn>
         </div>
-      </q-toolbar>
+      </div>
     </q-header>
 
     <q-drawer
@@ -208,75 +191,6 @@
       overlay
       bordered
     >
-      <!-- <q-tabs align="left">
-        <q-route-tab to="/page1" class="text-primary" label="Page One" />
-        <q-route-tab to="/page2" class="text-primary" label="Page Two" />
-        <q-route-tab to="/page3" class="text-primary" label="Page Three" />
-      </q-tabs> -->
-
-      <!-- drawer content -->
-
-      <!-- <q-menu>
-        <q-list>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="Home"
-                  to="/"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="About"
-                  to="/about"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="fellowship"
-                  to="/fellowship"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-
-          <q-item clickable v-close-popup>
-            <q-item-section>
-              <q-item-label
-                ><q-btn
-                  stretch
-                  flat
-                  label="Contact"
-                  to="/contact"
-                  no-caps
-                  size="md"
-                  class="q-mx-sm my-font-montserrat-light"
-              /></q-item-label>
-            </q-item-section>
-          </q-item>
-        </q-list>
-      </q-menu> -->
     </q-drawer>
 
     <q-page-container>
@@ -286,17 +200,29 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 
 export default {
   setup() {
     const rightDrawerOpen = ref(false);
-
     return {
       rightDrawerOpen,
       toggleRightDrawer() {
         rightDrawerOpen.value = !rightDrawerOpen.value;
       },
+    };
+  },
+  watch: {
+    "$store.getters.isLoggedIn": {
+      handler(e) {
+        this.isLoggedIn = e;
+      },
+      immediate: true,
+    },
+  },
+  data() {
+    return {
+      isLoggedIn: false,
     };
   },
 };
@@ -307,6 +233,10 @@ export default {
   width: 170px;
   height: 68px;
   object-fit: contain;
+}
+
+a {
+  font-size: 2rem;
 }
 
 .login {

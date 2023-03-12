@@ -1,5 +1,5 @@
 <template>
-  <div class="how bg-warning q-py-xl">
+  <div class="how q-py-xl">
     <h2
       style="font-size: 40px"
       class="text-h3 q-mb-lg text-center text-weight-bold text-primary"
@@ -7,16 +7,12 @@
       Our Plans
     </h2>
 
-    <p
-      style="font-size: 17px"
-      class="text-positive q-px-xl text-center text-body1"
-    >
-      Let's take your feeding to a higher level! Healthy eating routine just got
-      easier with Agrobays. <br />
-      You can ensure that your family and relatives are part of a planned food
-      saving scheme <br />
-      which in turn ensures that good and affordable food items are delivered
-      every 30days.
+    <p style="font-size: 17px" class="q-px-xl text-center text-body1">
+      Our plans are tailored to help various class of earners find satisfaction
+      using our service. <br />
+      Whether you are a low, medium or high income earner, you can choose a
+      package <br />
+      that fits your pocket and enjoy your harvest in 30days.
     </p>
 
     <div class="row align-c text-c q-pt-xl container">
@@ -24,7 +20,7 @@
         <div class="holderr">
           <div class="hold">
             <h6 class="text-primary">₦300 Plan</h6>
-            <p style="font-size: 16px" class="text-body1 text-positive">
+            <p style="font-size: 16px" class="text-body1">
               Choose a comfortable plan of ₦300 per which would sum up to ₦9,000
               of 30 days saving. A food bag worth ₦9,000 with various food items
               would be delivered to you.
@@ -32,7 +28,7 @@
           </div>
           <div class="hold">
             <h6 class="text-primary">₦500 Plan</h6>
-            <p style="font-size: 16px" class="text-body1 text-positive">
+            <p style="font-size: 16px" class="text-body1">
               Choose a comfortable plan of ₦500 per which would sum up to ₦
               15,000 of 30 days saving. A food bag worth ₦15,000 with various
               food items would be delivered to you.
@@ -40,7 +36,7 @@
           </div>
           <div class="hold">
             <h6 class="text-primary">₦1000 Plan</h6>
-            <p style="font-size: 16px" class="text-body1 text-positive">
+            <p style="font-size: 16px" class="text-body1">
               Choose a comfortable plan of ₦1000 per which would sum up to
               ₦30,000 of 30 days saving. A food bag worth ₦30,000 with various
               food items would be delivered to you.
@@ -149,7 +145,7 @@ img {
 }
 
 /* .holderr .hold:nth-child(1):after {
-  
+
 } */
 
 @media (max-width: 400px) {

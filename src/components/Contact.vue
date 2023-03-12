@@ -4,18 +4,18 @@
       <div class="col-md-4 q-pa-lg bgg col-sm-12 col-xs-12">
         <h2
           style="font-size: 40px"
-          class="
-            text-h3
-            q-px-xl q-my-lg
-            text-center text-weight-bold text-secondary
-          "
+          class="text-h3 q-px-xl q-my-lg text-center text-weight-bold text-secondary"
         >
           Contact Details
         </h2>
 
         <!-- <q-separator class="text-center bg-secondary" style="width: 50%" /> -->
         <div class="inp">
-          <q-input class="q-my-lg text-secondary" bottom-slots label="Label">
+          <q-input
+            class="q-my-lg text-secondary"
+            bottom-slots
+            label="#F6, Y.A. Ahmed House, Ahmadu Bello Way, Kaduna, Nigeria"
+          >
             <template v-slot:prepend>
               <q-icon class="text-secondary" name="place" />
             </template>
@@ -25,7 +25,11 @@
 
             <!-- <template v-slot:hint> Field hint </template> -->
           </q-input>
-          <q-input class="q-my-lg text-secondary" bottom-slots label="Label">
+          <q-input
+            class="q-my-lg text-secondary"
+            bottom-slots
+            label="+234 809 917 9487"
+          >
             <template v-slot:prepend>
               <q-icon class="text-secondary" name="call" />
             </template>
@@ -35,7 +39,11 @@
 
             <!-- <template v-slot:hint> Field hint </template> -->
           </q-input>
-          <q-input class="q-my-lg text-secondary" bottom-slots label="Label">
+          <q-input
+            class="q-my-lg text-secondary"
+            bottom-slots
+            label="https://agrobays.com"
+          >
             <template v-slot:prepend>
               <q-icon class="text-secondary" name="language" />
             </template>
@@ -45,7 +53,11 @@
 
             <!-- <template v-slot:hint> Field hint </template> -->
           </q-input>
-          <q-input class="q-my-lg text-secondary" bottom-slots label="Label">
+          <q-input
+            class="q-my-lg text-secondary"
+            bottom-slots
+            label="hi@agrobays.com"
+          >
             <template v-slot:prepend>
               <q-icon class="text-secondary" name="mail" />
             </template>
@@ -64,7 +76,7 @@
         >
           Contact Us
         </h2>
-        <p class="text-positive q-px-xl">
+        <p class="">
           Your email address will not be published. Required fields are marked
           with
         </p>

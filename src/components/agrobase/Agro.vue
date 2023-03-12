@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="col col-md-6 col-sm-6 col-xs-12 text-center">
-        <img src="/images/group.png" />
+        <img src="/images/Group.png" />
       </div>
     </div>
 

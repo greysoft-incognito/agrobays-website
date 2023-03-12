@@ -1,1 +1,70 @@
 // app global css in SCSS form
+// app global css in SCSS form
+// @import "~vue-tabulator/dist/scss/bootstrap/tabulator_bootstrap4";
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+}
+html::-webkit-scrollbar {
+  width: 0.65rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #8bc34a;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-bg: rgb(232, 246, 239);
+  --color-dark: rgb(34, 31, 30);
+  --color-dark-gray: rgb(255, 255, 255, 20%);
+  --color-orange: rgb(239, 137, 95);
+  --main-width: 100%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #111;
+}
+
+// End Datatables Styles
+
+// Transaction Items Styles
+.wrappie {
+  padding: 1rem 0;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-hold {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-hold i {
+  font-size: 4rem;
+  height: 100%;
+  color: #8bc34a;
+}
+
+@media (max-width: 500px) {
+  .hold {
+    width: 100%;
+  }
+}
+// EndnTransaction Items Styles

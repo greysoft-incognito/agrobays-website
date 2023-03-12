@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <div class="top container">
-      <div class="row flex align-c text-c">
+      <div class="row flexx align-c text-c">
         <div class="col col-md-6 col-sm-12 col-xs-12 q-pr-xl q-pb-xl">
           <img src="/images/agrofarm6.png" />
         </div>
@@ -13,14 +13,16 @@
             Soy Beans
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
-            Choose a comfortable plan of your choice, from #300, #500 or#1000
-            daily... You can even save for several days at once.
+          <p style="font-size: 20px" class="text-body1 q-mt-lg">
+            As a great source of protein for plants animals, we grow soybeans in
+            large quantity mainly for local markets. We farm for various
+            production plants on demand and supply quality, well sorted and
+            bagged products to our clients.
           </p>
 
-          <button class="bg-secondary text-primary btn btn-white">
+          <!-- <button class="bg-secondary text-primary btn btn-white">
             Learn More
-          </button>
+          </button> -->
         </div>
       </div>
     </div>

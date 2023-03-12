@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-my-lg">
+  <div class="q-pa-md q-my-lg container">
     <div class="row align-c text-c q-pt-xl container">
       <div class="col-md-6 q-pb-lg col-sm-6 col-xs-12">
         <h2
@@ -9,14 +9,20 @@
           Ginger Farm
         </h2>
 
-        <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
-          Choose a comfortable plan of your choice, from #300, #500 or#1000
-          daily... You can even save for several days at once.
+        <p style="font-size: 20px" class="text-body1 q-mt-lg">
+          Our ginger, situated across southern Kaduna, Nothern Nigeria is
+          well-priced because of its flavour and neatness. We ensure that our
+          yields are Aflatoxin free and this has secured access to global
+          markets and create demands from more global regions. <br />
+          <br />
+
+          Premium pre and post harvest handlng of the produce presents us a
+          Grade-A product, which are marketed as wet or dry ginger.
         </p>
 
-        <button class="bg-secondary text-primary btn btn-white">
+        <!-- <button class="bg-secondary text-primary btn btn-white">
           Learn More
-        </button>
+        </button> -->
       </div>
       <div class="col col-md-6 col-sm-6 col-xs-12 text-center">
         <img src="/images/agrofarm3.png" />

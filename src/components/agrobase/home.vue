@@ -1,62 +1,42 @@
 <template>
-  <div class="q-pa-md q-my-xl home">
-    <div class="row align-c text-c show container">
-      <div class="col-md-6 lef col-sm-12 col-xs-12">
-        <h2
-          style="font-size: 40px"
-          class="text-h3 q-my-lg text-weight-bold text-secondary"
-        >
-          AgroBays
-        </h2>
+  <div class="q-pa-md home">
+    <div class="h">
+      <div class="row align-c text-c show container">
+        <div class="col-md-6 lef col-sm-12 col-xs-12">
+          <h2
+            style="font-size: 50px"
+            class="text-h3 q-my-lg text-weight-bold text-secondary"
+          >
+            Agrobays
+          </h2>
 
-        <p style="font-size: 20px" class="text-body1 text-secondary q-mt-lg">
-          Agrofarm provides farms, private foresters, <br />
-          and agricultural producers with online services.
-        </p>
+          <p
+            style="font-size: 20px"
+            class="text-body1 lead text-secondary q-mt-lg"
+          >
+            21st Century Agriculture. <br />
+            Exploring agriculture with technology and mechanization.
+          </p>
 
-        <div class="input-email q-mt-lg">
-          <div class="input q-px-lg">
-            <input placeholder="Enter your email" type="text" />
-            <button class="text-secondary">Register</button>
+          <div class="input-email q-mt-lg">
+            <div class="input q-px-lg">
+              <input placeholder="Enter your email" type="text" />
+              <button class="text-secondary">Register</button>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="col col-md-6 col-sm-12 col-xs-12">
-        <img class="img" src="/images/group.png" />
-      </div> -->
-    </div>
 
-    <div class="boxes q-my-lg">
-      <div class="boxes-wrap container">
-        <q-btn to="/agrofoods"
-          ><div class="box">
-            <p>AgroFoods</p>
-          </div></q-btn
-        >
-        <q-btn to="/agrofarms"
-          ><div class="box">
-            <p>AgroFarms</p>
-          </div></q-btn
-        >
-        <q-btn to="/agrotech"
-          ><div class="box">
-            <p>AgroTech</p>
-          </div></q-btn
-        >
+      <div class="boxes q-my-lg">
+        <div class="boxes-wrap container">
+          <q-btn class="btn3" to="/agrofoods">AgroFoods</q-btn>
 
-        <q-btn to="/agroinvest">
-          <div class="box">
-            <p>AgroInvest</p>
-          </div>
-        </q-btn>
+          <q-btn class="btn3" to="/agrofoods">AgroFarms</q-btn>
+
+          <q-btn class="btn3" to="/agrofoods">AgroTech</q-btn>
+        </div>
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
@@ -67,9 +47,21 @@ export default {};
 <style scoped>
 .home {
   position: relative;
-  height: 100vh;
-  background: url("/images/bays.jpg") center center/cover no-repeat;
+  height: 80vh;
+  background: url("https://img.freepik.com/free-photo/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand_335224-761.jpg?size=626&ext=jpg")
+    center center/cover no-repeat;
   z-index: 1;
+}
+.lead {
+  line-height: 1.3;
+}
+
+.h {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 90%;
 }
 
 .show {
@@ -86,16 +78,9 @@ export default {};
   width: 100%;
   height: 100%;
   opacity: 0.75;
-  background: rgba(11, 101, 52, 0.6);
-  /* background: linear-gradient(121.81deg, #2b945b 20.1%, #8bc34a 131.87%); */
+  background: rgba(11, 101, 52, 0.1);
   z-index: 1;
 }
-
-/* .show {
-  position: relative;
-  z-index: 1;
-} */
-
 .align-c {
   display: flex;
   align-items: center;
@@ -109,7 +94,7 @@ h5 {
   border-radius: 10px;
   border: 1px solid rgba(229, 229, 229, 0.4);
   background: #fff;
-  padding: 0.65rem;
+  padding: 0.15rem 0.65rem;
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -157,6 +142,41 @@ h5 {
   color: #fff;
 }
 
+.btn3 {
+  color: #fff;
+
+  border: 1px solid #fff;
+  padding: 0.75rem 1.5rem;
+  margin: 3rem 1rem;
+  -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+  transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+}
+
+.btn3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000;
+  -webkit-transform: scaleX(0.3);
+  transform: scaleX(0.3);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.btn3:hover::before {
+  opacity: 1;
+  background-color: #8bc34a;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02),
+    opacity 0.4s;
+  transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+}
+
 @media (max-width: 500px) {
   .input-email .input {
     padding: 0.75rem;
@@ -169,6 +189,23 @@ h5 {
 
   .boxes-wrap .box {
     margin: 0.2rem;
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+
+  p.lead {
+    font-size: 20px !important;
+  }
+
+  .btn3 {
+    color: #fff;
+
+    border: 1px solid #fff;
+    padding: 0.35rem 0.75rem;
+    margin: 2rem 1rem;
+    -webkit-transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
+    transition: all 0.4s cubic-bezier(0.5, 0.24, 0, 1);
   }
 }
 

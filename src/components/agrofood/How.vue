@@ -1,5 +1,5 @@
 <template>
-  <div class="how bg-warning">
+  <div class="how bg-primary">
     <!-- <h2
       style="font-size: 40px"
       class="text-h3 q-mb-lg text-center text-weight-bold text-primary"
@@ -19,11 +19,11 @@
         every 30days
       </p>
 
-      <div class="botton text-center">
+      <!-- <div class="botton text-center">
         <button class="button q-pa-xl text-secondary">
           Learn More<i class="fas fa-chevron-right text-secondary q-ml-xl"></i>
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

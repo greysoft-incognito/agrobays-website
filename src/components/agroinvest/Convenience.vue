@@ -7,7 +7,7 @@
       >
         Invest on your Convenience
       </h2>
-      <p class="text-center text-positive q-pb-lg q-mb-lg">
+      <p class="text-center q-pb-lg q-mb-lg">
         Choose a comfortable plan of your choice, from #300, #500 or#1000
         daily... You can even save for several days at once.
       </p>
@@ -21,7 +21,7 @@
                 <p>Invest on your convenince for long term.</p>
 
                 <button
-                  class="q-px-lg q-py-sm q-mt-md text-secondary bg-negative"
+                  class="q-px-lg q-py-sm q-mt-md text-secondary bg-primary"
                 >
                   Learn More
                 </button>
@@ -37,7 +37,7 @@
                   <p>Invest on your convenince for long term.</p>
 
                   <button
-                    class="q-px-lg q-py-sm q-mt-md text-secondary bg-negative"
+                    class="q-px-lg q-py-sm q-mt-md text-secondary bg-primary"
                   >
                     Learn More
                   </button>
@@ -48,7 +48,7 @@
                 <p class="text">Invest on your convenince for long term.</p>
 
                 <button
-                  class="q-px-lg q-py-sm q-mt-xs text-secondary bg-negative"
+                  class="q-px-lg q-py-sm q-mt-xs text-secondary bg-primary"
                 >
                   Learn More
                 </button>

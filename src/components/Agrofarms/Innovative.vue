@@ -2,11 +2,12 @@
   <div class="text">
     <h2
       style="font-size: 30px"
-      class="q-pa-md text-primary text-weight-bold text-center"
+      class="q-px-md text-primary text-weight-bold text-center"
     >
       We Enjoy Farming.
     </h2>
-    <p style="font-size: 18px" class="text-center q-pa-lg text-positive">
+    <p style="font-size: 18px" class="text-center q-mb-lg q-px-lg">
+      We farm and train farmers on modern farming practices. <br />
       Our farms are widespread across Nigeria and batched in 50 to 100 hectares
       in size, <br />
       farming Ginger, Soybeans, Rice and Livestock. We also engage Small Holder
@@ -23,4 +24,8 @@
 export default {};
 </script>
 
-<style scoped></style>
+<style scoped>
+.text {
+  margin: 4rem 0 0;
+}
+</style>

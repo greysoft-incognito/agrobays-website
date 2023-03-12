@@ -7,9 +7,9 @@
     <Agro />
     <Institutions />
     <Join />
-    <Invest />
-    <Contact />
-    <Sponsors />
+    <!-- <Invest /> -->
+    <!-- <Contact /> -->
+    <!-- <Sponsors /> -->
 
     <Footer />
   </q-page>
@@ -22,7 +22,7 @@ import Whatcards from "../components/agrobase/Whatcards.vue";
 import Agro from "../components/agrobase/Agro.vue";
 import Institutions from "../components/agrobase/Institutions.vue";
 import Join from "../components/agrobase/Join.vue";
-import Tabs from "../components/Tabs.vue";
+import Tabs from "../components/agrofood/Tabs.vue";
 import Contact from "../components/Contact.vue";
 import Sponsors from "../components/agrobase/Sponsors.vue";
 import Invest from "../components/agrobase/Invest.vue";

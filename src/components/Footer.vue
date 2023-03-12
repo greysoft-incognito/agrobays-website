@@ -1,44 +1,23 @@
 <template>
   <section>
-    <div class="q-pa-xl bg-negative text-white">
-      <div class="row footer-row">
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+    <div class="q-pa-xl bg-primary text-white">
+      <div class="row footer-row container">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
           <div class="text-body1">About</div>
-          <q-separator class="bg-secondary" style="width: 50%" />
+          <q-separator class="bg-secondary" style="width: 10%" />
           <div
-            class="
-              text-body2
-              link
-              q-mt-md
-              cursor-pointer
-              my-font-montserrat-light
-              text-secondary
-            "
+            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
           >
             Home
           </div>
           <div
-            class="
-              text-body2
-              link
-              q-mt-md
-              cursor-pointer
-              my-font-montserrat-light
-              text-secondary
-            "
+            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrofoods')"
           >
             AgroFoods
           </div>
           <div
-            class="
-              text-body2
-              link
-              q-mt-md
-              cursor-pointer
-              my-font-montserrat-light
-              text-secondary
-            "
+            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrofarms')"
           >
             AgroFarms
@@ -50,21 +29,14 @@
               Media
             </div> -->
           <div
-            class="
-              text-body2
-              link
-              q-mt-md
-              cursor-pointer
-              my-font-montserrat-light
-              text-secondary
-            "
+            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrotech')"
           >
             AgroTech
           </div>
         </div>
 
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+        <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
           <div class="text-body1 my-font-montserrat-light">Resources</div>
           <q-separator class="bg-secondary" style="width: 50%" />
           <div
@@ -93,11 +65,11 @@
           >
             FAQ
           </div>
-        </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+        </div> -->
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
           <div class="text-body1 my-font-montserrat-light">Social Media</div>
-          <q-separator class="bg-secondary" style="width: 50%" />
-          <div class="text-body2 q-mt-md cursor-pointer">
+          <q-separator class="bg-secondary" style="width: 10%" />
+          <div class="text-body1 q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
               href="https://www.facebook.com/manzo.maigari"
@@ -113,7 +85,7 @@
               <span class="q-ml-sm my-font-montserrat-light">Facebook</span></a
             >
           </div>
-          <div class="text-body2 q-mt-md cursor-pointer">
+          <div class="text-body1 q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
               href="http://twitter.com"
@@ -129,7 +101,7 @@
               <span class="q-ml-sm my-font-montserrat-light">Twitter</span></a
             >
           </div>
-          <div class="text-body2 q-mt-md cursor-pointer">
+          <div class="text-body1 q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
               href="https://www.instagram.com/maigarimanzo/"
@@ -162,29 +134,53 @@
             >
           </div>
         </div>
-        <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
+        <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
           <div class="text-body1 my-font-montserrat-light">Contact Info</div>
-          <q-separator class="bg-secondary" style="width: 50%" />
-          <div class="text-body2 my-font-montserrat-light q-mt-md">
-            31, Gwari Avenue, Barnawa, Kaduna, Nigeria.
+          <q-separator class="bg-secondary" style="width: 10%" />
+          <div class="text-body1 my-font-montserrat-light q-mt-md">
+            31 Gwari Avenue, Barnawa, Kaduna, Nigeria.
           </div>
-          <div class="text-body2 q-mt-md my-font-montserrat-light">
+          <div class="text-body1 q-mt-md my-font-montserrat-light">
             <span>Email: </span>
-            <span class="ttext-secondary">hi@agrobase.com</span>
+            <span class="text-secondary">hi@agrobays.com</span>
           </div>
-          <!-- <div class="text-body2 q-mt-md my-font-montserrat-light">
-              <span>Phone: </span>
-              <span class="text-primary">+234 807 777 7777</span>
-            </div> -->
+          <div class="text-body1 q-mt-md my-font-montserrat-light">
+            <span>Phone: </span>
+            <span class="text-secondary"> +23480 6566 5759</span>,
+            <span class="text-secondary"> +23480 6174 6484 </span>
+          </div>
         </div>
       </div>
       <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
-      <div class="text-caption text-secondary my-font-montserrat-light">
-        © 2021 Agrobase. All rights reserved.
+      <div
+        class="text-caption text-secondary container my-font-montserrat-light"
+      >
+        © 2021 Agrobays. All rights reserved.
       </div>
-      <div class="text-caption text-secondary my-font-montserrat-light">
+      <div
+        class="text-caption text-secondary container my-font-montserrat-light"
+      >
         By Greysoft© Technologies.
       </div>
+      <!-- <div
+        class="text-caption text-secondary container my-font-montserrat-light"
+      >
+        <router-link class="text-grey-3" :to="{ name: 'user.agreement' }">
+          User Agreement
+        </router-link>
+        |
+        <router-link class="text-grey-3" :to="{ name: 'privacy.policy' }">
+          Privacy Policy
+        </router-link>
+        |
+        <router-link class="text-grey-3" :to="{ name: 'changelog' }">
+          Changelog
+        </router-link>
+        |
+        <router-link class="text-grey-3" :to="{ name: 'faq' }">
+          FAQ
+        </router-link>
+      </div> -->
     </div>
   </section>
 </template>

@@ -1,26 +1,33 @@
 <template>
-  <Agrofarmshome />
+  <HeroHomes
+    title="AgroFarms"
+    background="/images/agrofarm1.jpeg"
+    desc="Our community of farmers are trained for best farming practice to
+          leverage technology and mechanization for improved yield."
+  />
+
   <Innovative />
+  <Farmone />
   <Secondsecfarm />
   <Firstsec />
 
-  <hr />
-  <div class="headd">
-    <h2 class="text-primary text-weight-bold text-center">Our Farms</h2>
-    <Farmone />
-    <Farmtwo />
+  <!-- <hr /> -->
+  <!-- <div class="headd">
+    <h2 class="text-primary q-mt-xl text-weight-bold text-center">Our Farms</h2>
+
+    <Farmtwo class="q-mt-xl" />
     <Farmthree />
     <Farmfour />
-  </div>
+  </div> -->
   <Join />
-  <Invest />
-  <Sponsors />
+  <!-- <Invest /> -->
+  <!-- <Sponsors /> -->
 
   <Footer />
 </template>
 
 <script>
-import Agrofarmshome from "../components/Agrofarms/Agrofarmshome.vue";
+import HeroHomes from "../components/HeroHomes.vue";
 import Innovative from "../components/Agrofarms/Innovative.vue";
 import Secondsecfarm from "../components/Agrofarms/Secondsecfarm.vue";
 import Firstsec from "../components/Agrofarms/Firstsec.vue";
@@ -34,7 +41,7 @@ import Sponsors from "../components/agrobase/Sponsors.vue";
 import Footer from "../components/Footer.vue";
 export default {
   components: {
-    Agrofarmshome,
+    HeroHomes,
     Innovative,
     Secondsecfarm,
     Firstsec,

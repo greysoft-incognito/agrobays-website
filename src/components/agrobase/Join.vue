@@ -5,7 +5,7 @@
         style="font-size: 40px"
         class="text-h3 q-my-md text-center text-weight-bold text-primary"
       >
-        Join Our Farmers Community
+        Join Our Community of Farmers
       </h2>
       <!-- <p class="text-center q-pb-lg q-mb-xl">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
@@ -18,15 +18,14 @@
         <img src="/images/join.png" />
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12">
-        <p style="font-size: 20px" class="text-body1 text-positive q-my-xl">
-          To be a member of our community either as an investor or farmer sign
-          up
+        <p style="font-size: 20px" class="text-body1 q-my-xl">
+          To be a member of our community sign up
         </p>
         <div class="input-wrap">
           <label class="text-primary" for="">Full Name</label> <br />
 
           <div class="input">
-            <i class="far q-mr-md fa-user text-primary"></i>
+            <i class="fa-solid q-mr-sm fa-user text-primary"></i>
 
             <input type="text" placeholder="Farmers Full Name" />
           </div>
@@ -36,13 +35,13 @@
           <label for="" class="text-primary">Email</label> <br />
 
           <div class="input">
-            <i class="q-mr-md fa fa-envelope text-primary"></i>
+            <i class="q-mr-sm fa-solid fa-envelope text-primary"></i>
 
             <input type="email" placeholder="Enter Email" />
           </div>
         </div>
 
-        <button class="text-secondary btn">Join</button>
+        <q-btn class="text-secondary btn">Join</q-btn>
       </div>
     </div>
   </div>
@@ -55,8 +54,9 @@ export default {};
 <style scoped>
 .input-wrap .input {
   border: 1px solid #2b945b;
-  padding: 0.75rem;
+  padding: 0.55rem;
   margin: 1rem 0;
+  border-radius: 10px;
 }
 
 .input-wrap .input input {
@@ -72,6 +72,8 @@ export default {};
   margin: 1rem;
   border-radius: 8px;
   margin: 0.55rem 0;
+  font-size: 14px;
+  width: 150px;
 }
 
 @media (max-width: 400px) {

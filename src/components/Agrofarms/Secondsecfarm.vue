@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-mt-lg">
+  <div class="q-pa-md q-mt-lxl">
     <div class="top container">
       <div class="row flex align-c text-c">
         <div class="col col-md-6 col-sm-6 col-xs-12 q-pb-xl">
@@ -12,10 +12,24 @@
           >
             Select a plan
           </h2> -->
+          <h2
+            style="font-size: 30px"
+            class="text-primary line text-weight-bold"
+          >
+            Small Holder Farmers (SMH)
+          </h2>
 
-          <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
-            Choose a comfortable plan of your choice, from #300, #500 or#1000
-            daily... You can even save for several days at once.
+          <p style="font-size: 20px" class="text-body1 q-mb-md">
+            Small Holder Farmers (SMH) constitute the majority of farmers in
+            Sub-Saharan Africa with handkerchief sized farms designed to feed
+            their immediate families. We have engaged in training programs for
+            farmers on the need for the practice of large scale farming and the
+            benefits of cooperatives in accessing larger markets. <br />
+            <br />
+
+            Our myriads of SMFs enroll annually in our various out growers
+            scheme projects to farm a variety of crops for local and global
+            markets.
           </p>
 
           <!-- <button class="text-secondary btn">Get started</button> -->
@@ -55,6 +69,10 @@ img {
   margin: 0.55rem 0;
 }
 
+.line {
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
 @media (max-width: 400px) {
 }
 

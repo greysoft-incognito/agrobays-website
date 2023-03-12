@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md q-my-lg">
+  <div class="q-pa-md container q-my-lg">
     <div class="row align-c text-c q-pt-xl container">
       <div class="col-md-6 q-pb-lg col-sm-6 col-xs-12">
         <!-- <h2
@@ -8,10 +8,18 @@
         >
           Select a plan
         </h2> -->
+        <h2 style="font-size: 30px" class="text-primary line text-weight-bold">
+          All Inclusive Farming
+        </h2>
 
-        <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
-          Choose a comfortable plan of your choice, from #300, #500 or#1000
-          daily... You can even save for several days at once.
+        <p style="font-size: 20px" class="text-body1">
+          As part of our community sensitization program, we continuously
+          advocate for women to farm alongside men for an all-inclusive economic
+          development. <br />
+          <br />
+          Agrobays is largely a women-driven farming community and this is quite
+          unique because the level of innovation that breeds excellence and
+          constant annual productivety.
         </p>
 
         <!-- <button class="text-secondary btn">Get started</button> -->
@@ -51,6 +59,11 @@ img {
   padding: 0.75rem;
   border-radius: 8px;
   margin: 0.55rem 0;
+}
+
+.line {
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
 }
 
 @media (max-width: 400px) {

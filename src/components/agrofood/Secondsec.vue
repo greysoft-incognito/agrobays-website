@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <div class="top container">
-      <div class="row align-c flex text-c">
+      <div class="row align-c flexx text-c">
         <div class="col col-md-6 col-sm-12 col-xs-12 q-py-xl">
           <img src="/images/agrofood1.png" />
         </div>
@@ -13,7 +13,7 @@
             Save Money
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
+          <p style="font-size: 20px" class="text-body1 q-mt-lg">
             After selecting your desired plan, select the number of days you
             wish to save for on the savings calendar and save each time. Ensure
             to complete savings before the due date.

@@ -1,23 +1,23 @@
 <template>
-  <div class="q-pa-md bg-primary q-my-lg">
-    <div class="row align-c text-c q-pt-xl container">
-      <div class="col-md-6 q-pb-lg col-sm-6 col-xs-12">
+  <div class="q-pa-md q-my-lg bg-primary">
+    <div class="row align-c text-c q-pb-xl q-pt-xl container">
+      <div class="col-md-6 col-sm-12 col-xs-12">
         <h2
           style="font-size: 40px"
           class="text-h3 q-my-lg text-weight-bold text-secondary"
         >
-          Select a plan
+          Get Food Bag
         </h2>
 
         <p style="font-size: 20px" class="text-body1 text-secondary q-mt-lg">
-          Choose a comfortable plan of your choice, from #300, #500 or#1000
-          daily... You can even save for several days at once.
+          Select your desired Food Bag from the list and choose delivery option,
+          Pickup or Home Delivery.
         </p>
 
         <button class="text-secondary btn">Get started</button>
       </div>
-      <div class="col col-md-6 col-sm-6 col-xs-12">
-        <img src="/images/farmer.png" />
+      <div class="col col-md-6 col-sm-12 col-xs-12 text-center">
+        <img src="/images/agrofood2.png" />
       </div>
     </div>
 

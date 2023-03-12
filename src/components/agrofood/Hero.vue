@@ -8,53 +8,59 @@
         >
           AgroFoods
         </h2>
-
-        <!-- <h5 style="font-size: 30px" class="text-h3 q-my-lg">
-          <span class="text-accent text-h3">Save</span> like an Ant, <br />
-          <span class="text-accent text-h3">Eat</span> like an
-          <span class="skew">Elephant</span>.
-        </h5> -->
-        <div class="text-h3 text-info text-weight-bold">
+        <div class="text-h3 text-dark text-weight-bold">
           <span class="text-accent">Save</span> like an Ant,
         </div>
-        <div class="text-h3 text-info text-weight-bold">
+        <div class="text-h3 text-dark text-weight-bold">
           <span class="text-accent">Eat</span> like an <span>Elephant</span>
         </div>
 
-        <p style="font-size: 20px" class="text-body1 text-positive q-mt-lg">
+        <p style="font-size: 20px" class="text-body1 q-mt-lg">
           Amazing how little drops of water make <br />
-          a mighty ocean? Get food every 30days <br />
+          a mighty ocean? Get a
+          <span class="text-primary text-bold">Food Bag</span> every 30days
+          <br />
           you never knew you were saving for!
         </p>
 
+        <div>
+          <div style="font-size: 20px" class="text-body1 q-mt-lg">
+            Book weekly delivery of the best
+            <span class="text-primary text-bold q-mr-md">
+              Fruits & Veggies</span
+            >
+            <br />
+            <q-btn @click="goto" class="text-secondary btn"
+              >Fruits & Veggies
+            </q-btn>
+          </div>
+        </div>
+
         <div class="input-email q-mt-lg">
           <div class="input q-px-lg">
-            <input placeholder="Enter your email" type="text" />
+            <input placeholder="Enter your email " type="text" />
             <button class="text-secondary">Start Saving</button>
           </div>
         </div>
       </div>
       <div class="col col-md-6 col-sm-12 col-xs-12">
-        <img class="img" src="/images/group.png" />
+        <img class="img" src="/images/Group.png" />
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goto() {
+      document.getElementById("get").scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style scoped>
-.sec {
-  margin-top: 5rem;
-}
 h5 span.skew {
   position: relative;
 }
@@ -67,12 +73,6 @@ h5 span.skew::after {
   height: 3px;
   color: #ffff;
   background-color: #2b945b;
-  /* width: 500px; */
-  /* height: 60%;
-  height: 100%;
-  border: solid 2px #000;
-  border-color: #000 transparent transparent transparent;
-  border-radius: 140%/100px 100px 0 0; */
 }
 .align-c {
   display: flex;
@@ -109,6 +109,14 @@ h5 {
 
 .img {
   width: 90%;
+}
+
+.btn {
+  border: none;
+  background: linear-gradient(121.81deg, #ca7c06 20.1%, #fcb64e 131.87%);
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin: 0.55rem 0;
 }
 
 @media (max-width: 400px) {
