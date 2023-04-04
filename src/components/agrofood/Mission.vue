@@ -23,15 +23,23 @@
           </div>
           <div class="mark-items">
             <i class="fas fa-check"></i>
-            <span>Saving petty cash over a period of time makes good feeding affordable.</span>
+            <span
+              >Saving petty cash over a period of time makes good feeding
+              affordable.</span
+            >
           </div>
           <div class="mark-items">
             <i class="fas fa-check"></i>
-            <span>Getting a Food Bag after 30days of small savings is exciting.</span>
+            <span
+              >Getting a Food Bag after 30days of small savings is
+              exciting.</span
+            >
           </div>
           <div class="mark-items">
             <i class="fas fa-check"></i>
-            <span>A planned and controlled feeding system is the new normal.</span>
+            <span
+              >A planned and controlled feeding system is the new normal.</span
+            >
           </div>
           <div class="mark-items">
             <i class="fas fa-check"></i>
@@ -52,7 +60,7 @@ export default {};
 
 <style scoped>
 img {
-  width: 70%;
+  width: 50%;
 }
 .wrapper {
   background: #e5e5e53d;
@@ -77,6 +85,6 @@ img {
 }
 .mark .mark-items span {
   color: #959292;
-  font-size: 18px;
+  font-size: 16px;
 }
 </style>

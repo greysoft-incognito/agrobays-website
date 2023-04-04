@@ -3,7 +3,7 @@
     <h2 class="q-pa-md text-primary text-weight-bold text-center">
       Innovative Farming Experience
     </h2>
-    <p style="font-size: 18px" class="text-center q-mb-lg q-px-xl">
+    <p class="text-center q-mb-lg q-px-xl">
       We offer a wide range of technology services to individuals and
       agribusiness organizations ranging from training, agric drone technology,
       survellance, <br />

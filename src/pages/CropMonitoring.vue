@@ -2,7 +2,7 @@
   <q-page class="">
     <div id="home" class="hero">
       <div class="wrapper">
-        <div>EOS Crop Monitoring</div>
+        <div>Agrobays Crop Monitoring</div>
         <p class="job">
           Agrobays Crop Monitoring uses a number of algorithms that allow us to
           analyze the resulting data from drones and satellite images for any
@@ -25,8 +25,9 @@
             <img :src="cropmonitoring.image" alt="" />
           </div>
           <div class="about_text">
-            <div class="title">{{ cropmonitoring.title }}</div>
+            <!-- <div class="title text-primary">{{ cropmonitoring.title }}</div> -->
             <p class="text">
+              <span class="text-weight-bold">{{ cropmonitoring.topText }}</span>
               {{ cropmonitoring.text }}
             </p>
           </div>
@@ -34,6 +35,169 @@
       </div>
     </div>
 
+    <section id="contributions" class="contributions serve max q-pt-xl">
+      <div class="about">
+        <h1 class="btn-12">Drone-Only Services for Crop Monitoring</h1>
+      </div>
+      <div class="services_contribution serve flexer">
+        <div class="right">
+          <img src="/images/droneimg.jpg" />
+        </div>
+
+        <div class="left">
+          <ul>
+            <li>
+              Here are some ways in which Agrobays can carry out crop monitoring
+              and management using drone only to help farmers master their
+              cultivation and numbers.
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Crop mapping:</span> The Mavic 2
+                Pro can be used to capture aerial imagery of fields and crops,
+                which can then be stitched together to create detailed crop
+                maps. These maps can be used to identify areas of the field that
+                may be underperforming or experiencing issues, and to plan more
+                targeted crop management strategies.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Crop health analysis: </span>
+                The high-resolution camera on the Mavic 2 Pro can be used to
+                capture detailed images of crops, which can then be analyzed to
+                identify areas of the field that may be suffering from nutrient
+                deficiencies, disease, or other issues. This information can be
+                used to make targeted management decisions, such as applying
+                fertilizer or pesticides only where needed.</span
+              >
+            </li>
+
+            <div v-if="showMore">
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>
+                  <span class="text-weight-bold">Yield estimation: </span>
+                  By regularly monitoring crops with the Mavic 2 Pro, farmers
+                  can gain a better understanding of their yield potential and
+                  adjust their management strategies accordingly. This can help
+                  farmers maximize their yield and profitability.</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>
+                  <span class="text-weight-bold">Irrigation management: </span>
+                  The Mavic 2 Pro can be used to monitor soil moisture levels,
+                  which can help farmers make more informed decisions about when
+                  and how much to irrigate their crops. This can help conserve
+                  water and improve crop yields.</span
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-check"></i>
+                <span>
+                  <span class="text-weight-bold">Weed management: </span>
+                  The Mavic 2 Pro can be used to identify and map areas of the
+                  field that are infested with weeds, allowing farmers to target
+                  those areas with herbicides or other management
+                  strategies.</span
+                >
+              </li>
+              <li>
+                <span>
+                  Overall, the Mavic 2 Pro can be a powerful tool for crop
+                  monitoring and management, allowing farmers to gather
+                  high-quality data and make more informed decisions about how
+                  to manage their crops for maximum yield and
+                  profitability.</span
+                >
+              </li>
+            </div>
+
+            <q-btn
+              :label="showMore ? 'Show less' : 'Show more'"
+              @click="showMore = !showMore"
+              color="primary"
+            />
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contributions" class="contributions max q-pt-xl">
+      <div class="about">
+        <h1 class="btn-12">Services</h1>
+      </div>
+      <div class="services_contribution">
+        <div class="left">
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold">Identifying crop health:</span>
+                By analyzing satellite images, it is possible to detect changes
+                in vegetation health, including stress, disease, and nutrient
+                deficiencies. This information can be used to identify problem
+                areas in the field and take corrective action.
+              </span>
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Estimating crop yield:</span>
+                Satellite images can be used to estimate crop yield potential by
+                analyzing factors such as plant density, vegetation health, and
+                environmental conditions.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Tracking growth: </span>
+                Satellites can be used to track crop growth over time, providing
+                insight into how crops are developing and when they are ready
+                for harvest.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <img src="/images/zoning.jpeg" />
+        </div>
+      </div>
+      <div class="services_contribution flexer">
+        <div class="right">
+          <img src="/images/fertilizer.jpeg" />
+        </div>
+
+        <div class="left">
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Mapping soil moisture:</span> By
+                analyzing satellite images, it is possible to map soil moisture
+                levels, which can help farmers make decisions about irrigation
+                and water management.</span
+              >
+            </li>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              <span>
+                <span class="text-weight-bold"> Monitoring weather: </span>
+                Satellite data can also be used to monitor weather patterns,
+                including temperature, precipitation, and cloud cover, which can
+                help farmers make decisions about planting, harvesting, and
+                other farm activities.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section id="contributions" class="contributions max q-pt-xl">
       <div class="about">
         <h1 class="btn-12">For Whom ?</h1>
@@ -115,36 +279,31 @@ export default defineComponent({
   data() {
     return {
       load: false,
+      showMore: false,
       cropmonitorings: [
         {
-          image:
-            "https://img.freepik.com/free-photo/closeup-biologist-researcher-holding-hands-vegan-beef-meat-sample_482257-4542.jpg?size=626&ext=jpg",
+          image: "/images/drone.jpg",
           title: " Seedling Monitoring",
-          text: "Environmental factors often limit plant establishment and survival through increased seedling mortality. Understanding plant growth and the causes of mortality can be helpful in developing solutions that enhance seeding success and improve restoration monitoring. The purpose of our research was to assess the efficacy of time lapse and motion sensing cameras for monitoring seedling height, density, and fate. We conducted this study in a salt desert shrub community in northwest Utah, USA. In spring 2017, we placed 28 cameras in fenced and unfenced plots seeded with bottlebrush squirreltail and collected hourly images of the seedlings’ development for the initial four months post-seeding. ",
+          topText: "Our drones and Satellite imaging system",
+          text: " offer farmers a powerful tool for monitoring crop health and identifying potential issues before they become major problems. By using drone data, farmers can make more informed decisions about crop management, leading to higher yields and healthier crops. Our NDVI Mapping: Drones can capture images of crops using specialized cameras that can measure the Normalized Difference Vegetation Index (NDVI). NDVI is a measure of the amount of live vegetation in an area, and it can be used to identify areas of a crop that are under stress. In addition, thermal cameras mounted on our drones can detect variations in temperature across a crop, which can indicate areas that are experiencing stress or disease. Our Multispectral cameras can capture images of crops in multiple wavelengths of light, allowing farmers to identify specific issues like nutrient deficiencies, water stress, or pest infestations and our drones can be used to collect data on soil moisture, nutrient levels, and other environmental factors, which can be used to create a detailed map of the field. This information can then be used to guide precision farming practices, such as variable-rate fertilizer application.",
         },
         {
-          image:
-            "https://img.freepik.com/free-vector/earth-structure-infographic_23-2148415580.jpg?size=626&ext=jpg",
+          image: "/images/farmers.jpeg",
           title: " Cold stress",
-          text: "Low temperature or cold stress is one of the major abiotic stresses for bean seeds production. The objective of this study was to analyze the effect of cold stress on Phaseolusvulgaris l seeds by doing different types of tests(germination studies, respiration response, conductivity test, amylase and catalase test) at different temperatures like room temperature, at 3° C and at - 19° C. Seeds were germinated in germination box. Germination percentage, rate, seed vigour and germination index was measured. Respiration response was also analyzed. The procedure does not quantify a respiration rate, but it indicates that respiration rate can be compared across different treatments. Observation from conductivity measurement shows that leachate solution of -19° C gives low conductivity whereas 3° C gives moderate and at normal room temperature it was high.",
+          topText: "Farmers are the primary beneficiaries",
+          text: " of Agrobays crop monitoring services. By providing detailed and up-to-date information about their crops, farmers can make better-informed decisions about when to water, fertilize, and harvest their crops. This can lead to increased yields and profits for farmers, as well as more sustainable farming practices.",
         },
         {
-          image:
-            "data:image/jpeg;base64,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",
+          image: "/images/insure.jpeg",
           title: "A researcher",
-          text: "In Central and Eastern Europe, long-standing crop growing practices rely on minerals from NPK fertilizers to improve land productivity and maximize yields. However, mineral nutrients’ effectiveness rarely goes beyond 40–60%, decreasing even more from repeated droughty periods. Moreover, irrational fertilization leaves a negative footprint on the environment. Luckily, today’s agriculture can opt for innovative practices allowing farmers to achieve higher yields while applying fewer chemicals. The only hindrance is farmers and agronomists’ conservatism preventing them from making a leap to sustainable agriculture methods and technologies.",
+          topText: "Agricultural insurance companies",
+          text: " also benefit from Agrobays services. By monitoring crop growth and health, Agrobays can provide insurers with more accurate information about the risks associated with insuring certain crops. This can help insurers to better manage their risks and offer more competitive insurance products to farmers.",
         },
         {
-          image:
-            "https://img.freepik.com/free-vector/illustration-computer-hacking-code_53876-37633.jpg?w=2000&t=st=1678269220~exp=1678269820~hmac=555b4ba45477621780b85be00fa62704759b26ffdc5a8afa5807632fdddd83c5",
+          image: "/images/ngo.jpeg",
           title: " Weather data",
-          text: "Daily updated weather forecasts (precipitation, air temperature, the sum of average temperatures, humidity, wind speed, snow depth). Available resolution: 6.5 х 6.5 km Access to historical weather data archives (precipitation, temperatures, humidity, wind speeds, snow depth) Analysis of 'critical' weather conditions for crops to prevent harvest losses (Cold stress, Heat stress)",
-        },
-        {
-          image:
-            "https://img.freepik.com/free-vector/earth-core-structure-composition_1284-64912.jpg?size=626&ext=jpg",
-          title: "Zoning",
-          text: "Productivity map ● Flexibility for the customization of zoning settings ● Fertilizer application map ● Ability to identify optimal sowing period ● Fertilizer application recommendations ● Data support for top agricultural machinery manufacturer terminals. From the perspective of development trend, the application prospect of high-resolution EOS is very extensive. We believe that more and more new high-resolution EOSs will be launched in the near future. Moreover, the application achievements of high-resolution EOS have been very rich at this stage. Therefore, this multidisciplinary topic aims to invite scholars to publish articles on the latest progress and the development trends of high-resolution EOSs, technologies, and applications.",
+          topText: "Government agencies and NGOs",
+          text: " also benefit from Agrobays crop monitoring services. By providing detailed information about crop growth and health, Agrobays can help these organizations to identify areas of potential food insecurity and target their aid and development programs more effectively. Overall, Agrobays; crop monitoring services have the potential to revolutionize the way that we grow and manage crops. By providing farmers, insurers, and other stakeholders with more accurate and timely information about crop growth and health, Agrobays is helping to create a more sustainable and resilient agricultural industry.",
         },
       ],
     };
@@ -197,7 +356,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 75%;
+  height: 85%;
   position: relative;
   z-index: 1;
   width: 100%;
@@ -250,6 +409,8 @@ p.by {
 }
 .about_img img {
   height: 100%;
+  max-width: 100% !important;
+  object-fit: cover !important;
 }
 .about p.intro {
   font-size: 18px;
@@ -275,9 +436,9 @@ p.by {
 }
 .about .about_wrapper {
   display: grid;
-  align-items: flex-start;
+  align-items: center;
   grid-template-columns: 2fr 4fr;
-  gap: 3rem;
+  gap: 2rem;
   margin: 2.5rem 0;
 }
 
@@ -286,6 +447,45 @@ p.by {
 }
 
 /* publications */
+
+.services_contribution {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+.services_contribution.serve {
+  align-items: flex-start;
+}
+.services_contribution.serve img {
+  border-radius: 10px;
+}
+
+.services_contribution img {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.services_contribution li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+.services_contribution i {
+  background: #2b945b;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
 
 .publications {
   padding: 6rem 0;
@@ -315,7 +515,7 @@ p.by {
 }
 .wrapper_contrubutions .box h2 {
   line-height: 1.2;
-  font-size: 30px;
+  font-size: 25px;
 }
 .wrapper_contrubutions .box p {
   font-weight: 700;
@@ -342,6 +542,9 @@ p.by {
 
 .contributions .about h1 {
   width: 350px;
+}
+.contributions.serve .about h1 {
+  width: auto;
 }
 
 .contributions {
@@ -381,7 +584,7 @@ p.by {
   /* Display the counter and set the list style for the list. */
   content: counter(my-awesome-list, decimal-leading-zero);
   background: #fff;
-  border: 10px solid #111;
+  border: 10px solid #2b945b;
   border-radius: 50%;
   color: #fff;
   display: inline-block;
@@ -431,120 +634,120 @@ p.by {
 }
 
 .awesome-list-item:nth-child(1)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 
 .awesome-list-item:nth-child(1) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(2)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 
 .awesome-list-item:nth-child(2) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(3)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 
 .awesome-list-item:nth-child(3) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(4)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(4) > span {
-  background: #333;
+  background: #2b945b;
 }
 .awesome-list-item:nth-child(5)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(5) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(6)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(6) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(7)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(7) > span {
-  background: #333;
+  background: #2b945b;
 }
 .awesome-list-item:nth-child(8)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(8) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(9)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(9) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(10)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(10) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(11)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(11) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .awesome-list-item:nth-child(12)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(12) > span {
-  background: #333;
+  background: #2b945b;
 }
 .awesome-list-item:nth-child(13)::before {
-  background: #333;
+  background: #2b945b;
   border-color: #111;
-  box-shadow: 0 0 0 3px #333;
+  box-shadow: 0 0 0 3px #2b945b;
 }
 .awesome-list-item:nth-child(13) > span {
-  background: #333;
+  background: #2b945b;
 }
 
 .toggle-active {
@@ -594,7 +797,7 @@ p.by {
   bottom: 20px;
   border: none;
   box-shadow: none;
-  width: 200px;
+  /* width: 200px; */
   line-height: 42px;
   -webkit-perspective: 230px;
   perspective: 230px;
@@ -653,12 +856,18 @@ p.by {
   transform: rotateX(-90deg);
 }
 
+@media (max-width: 1025px) {
+  .about {
+    max-width: 900px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero .wrapper {
     height: 90%;
   }
   .hero .wrapper > div {
-    font-size: 3.7rem;
+    font-size: 50px;
     margin: 0.5rem 0;
   }
 
@@ -682,7 +891,7 @@ p.by {
 }
 @media (max-width: 1015px) {
   .hero .wrapper {
-    height: 75%;
+    height: 85%;
   }
 }
 @media (max-width: 900px) {
@@ -701,6 +910,15 @@ p.by {
   }
   .about .about_wrapper {
     grid-template-columns: 1fr;
+  }
+
+  .services_contribution {
+    grid-template-columns: 1fr;
+  }
+
+  .flexer {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 500px) {
@@ -730,7 +948,7 @@ p.by {
   .hero .wrapper {
     padding: 0;
     text-align: left;
-    height: 65%;
+    height: 70%;
   }
   .hero .wrapper > div {
     font-size: 2rem;

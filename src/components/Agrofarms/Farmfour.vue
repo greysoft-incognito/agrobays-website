@@ -13,7 +13,7 @@
             Soy Beans
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 q-mt-lg">
+          <p class="q-mt-lg">
             As a great source of protein for plants animals, we grow soybeans in
             large quantity mainly for local markets. We farm for various
             production plants on demand and supply quality, well sorted and

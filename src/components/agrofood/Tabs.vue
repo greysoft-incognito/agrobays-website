@@ -3,6 +3,7 @@
     <div class="q-gutter-y-md griid container">
       <div class="cards">
         <div class="one card">
+          <i class="fa-solid fa-eye"></i>
           <h4 class="text-weight-bold text-primary q-mb-md">Vision</h4>
           <p>
             Attractive agriculture for everyone which leverages technology and
@@ -10,6 +11,7 @@
           </p>
         </div>
         <div class="one card">
+          <i class="fa-solid fa-arrows-to-circle"></i>
           <h4 class="text-weight-bold text-primary q-mb-md">Mission</h4>
           <p>
             Promote technology driven and mechanized farming to attract young
@@ -18,6 +20,7 @@
           </p>
         </div>
         <div class="one card">
+          <i class="fa-solid fa-scale-balanced"></i>
           <h4 class="text-weight-bold text-primary q-mb-md">Vision</h4>
           <p>
             People <br />
@@ -43,23 +46,6 @@ export default {
 </script>
 
 <style scoped>
-.q-tab__label {
-  font-size: 18px !important;
-  line-height: 1.715em;
-  font-weight: 500;
-}
-.q-panel > div {
-  height: 100%;
-  width: 60%;
-}
-.q-card {
-  box-shadow: none;
-  border-radius: 0;
-  min-height: 300px;
-  background: #fff;
-  position: relative;
-}
-
 .griid .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -72,8 +58,19 @@ export default {
 .griid .cards .card {
   text-align: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  min-height: 300px;
-  padding: 3rem 1rem 1rem;
+  min-height: 280px;
+  padding: 2rem 1rem 1rem;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+i {
+  font-size: 3rem;
+  color: #2b945b;
+  margin-bottom: 1rem;
 }
 
 /* .griid img {

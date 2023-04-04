@@ -13,7 +13,7 @@
             Rice Farm
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 text-secondary q-mt-lg">
+          <p class="text-secondary q-mt-lg">
             As a well consumed staple food in Nigeria, we have over 500 hectares
             of rice farms where mechanized large scale farming is practiced. We
             also run an outgrowers scheme in rice production to help farmers get

@@ -9,10 +9,7 @@
           {{ title }}
         </h2>
 
-        <p
-          style="font-size: 25px"
-          class="text-body1 text-center text-secondary q-mt-lg"
-        >
+        <p class="text-center text-secondary q-mt-lg">
           {{ desc }}
         </p>
 
@@ -70,7 +67,7 @@ export default {
 }
 
 p {
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
 }
 

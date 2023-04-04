@@ -13,32 +13,32 @@
             Save Money
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 q-mt-lg">
+          <p class="q-mt-lg">
             After selecting your desired plan, select the number of days you
             wish to save for on the savings calendar and save each time. Ensure
             to complete savings before the due date.
           </p>
 
-          <button class="text-secondary btn">Get started</button>
+          <button @click="goto" class="text-secondary btn">Get started</button>
         </div>
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goto() {
+      document.getElementById("get").scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style scoped>
 img {
-  width: 70%;
+  width: 50%;
 }
 .align-c {
   display: flex;

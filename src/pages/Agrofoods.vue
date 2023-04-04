@@ -3,12 +3,12 @@
     <Hero />
     <!-- <BBoxes /> -->
 
-    <div class="rowss">
-      <div class="head text-center q-pt-xl">
+    <div class="rowss q-pt-xl">
+      <div class="head text-center">
         <h2 class="text-primary text-h4 q-pa-md text-weight-bold">
           Steps to enjoy an unlimited food supply.
         </h2>
-        <p style="font-size: 20px" class="q-pa-md text-positive">
+        <p class="text-positive">
           Follow the instructions for a feeding plan that works.
         </p>
       </div>

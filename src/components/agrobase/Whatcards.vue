@@ -8,22 +8,46 @@
         What we do
       </h2>
       <p class="text-center q-pb-lg q-px-lg q-mb-xl">
-        To deliver a community of modern agric and agribusiness enthusiasts, 
-        we have divided our operations into <br> three main categories, under which all 
-        our operations are classsified.
+        To deliver a community of modern agric and agribusiness enthusiasts, we
+        have divided our operations into <br />
+        three main categories, under which all our operations are classsified.
       </p>
       <div class="cards">
         <div class="card">
-          <!-- <img src="/images/til.svg" alt="" /> -->
           <i class="ri-restaurant-line"></i>
 
           <h4>AgroFoods</h4>
           <p>
-            Whether you are a student, a civil servant or self-employed, AgroFoods 
-            helps you save a penny for a pound of food. Get weekly deliveries of the best fruits 
-            and vegetables grown in hydroponics and monthly deliveries of well-sorted foodbags.
+            Whether you are a student, a civil servant or self-employed,
+            AgroFoods helps you save a penny for a pound of food. Get weekly
+            deliveries of the best fruits and vegetables grown in hydroponics
+            and monthly deliveries of well-sorted foodbags.
           </p>
-          <div class="learn"><button class="btn button12 btn-white"><span>Visit</span></button></div>
+          <div class="learn">
+            <q-btn to="/agrofoods" class="btn button12 btn-white"
+              ><span>Visit</span></q-btn
+            >
+          </div>
+
+          <!-- <div class="learn"><button class="btn btn-white">Visit</button></div> -->
+        </div>
+        <div class="card">
+          <!-- <img src="/images/tech.png" alt="" /> -->
+          <!-- <i class="ri-caravan-line"></i> -->
+          <i class="fa-solid fa-cow"></i>
+
+          <h4>Livestock</h4>
+          <p>
+            Agrobays has various livestock farms of small rumnants, piggery,
+            poultry and cattles that are grown for meat, diary, eggs and
+            leather. Our patnership with global agric institutioins has helped
+            us...
+          </p>
+          <div class="learn">
+            <q-btn to="/livestock" class="btn button12 btn-white"
+              ><span>Visit</span></q-btn
+            >
+          </div>
 
           <!-- <div class="learn"><button class="btn btn-white">Visit</button></div> -->
         </div>
@@ -32,32 +56,22 @@
           <!-- <i class="ri-pie-chart-line"></i> -->
           <i class="ri-plant-line"></i>
 
-
           <h4>AgroFarms</h4>
           <p>
-            At AgroFarms, we leverage cutting-edge technologies and engineering to farm in a 
-            unique way that makes farming attractive. Thousands of small holder farmers find fulfilment 
-            being part of an outgrowers scheme that improves their farming experience.
+            At AgroFarms, we leverage cutting-edge technologies and engineering
+            to farm in a unique way that makes farming attractive. Thousands of
+            small holder farmers find fulfilment being part of an outgrowers
+            scheme that improves their farming experience.
           </p>
-          <div class="learn"><button class="btn button12 btn-white"><span>Visit</span></button></div>
+          <div class="learn">
+            <q-btn to="/agrofarms" class="btn button12 btn-white"
+              ><span>Visit</span></q-btn
+            >
+          </div>
 
           <!-- <div class="learn"><button class="btn btn-white">Visit</button></div> -->
         </div>
-        <div class="card">
-          <!-- <img src="/images/tech.png" alt="" /> -->
-          <!-- <i class="ri-caravan-line"></i> -->
-          <i class="ri-macbook-line"></i>
-
-          <h4>AgroTech</h4>
-          <p>
-            Innovative agriculture is at the center of all we do at Agrobays, which is why we 
-            re-invest more than a quarter of our revenue on research and development. We are constantly 
-            re-defining modern farming to be more attractive, predictable, sustainable and affordable.
-          </p>
-          <div class="learn"><button class="btn button12 btn-white"><span>Visit</span></button></div>
-
-          <!-- <div class="learn"><button class="btn btn-white">Visit</button></div> -->
-        </div>
+        
         <!-- <div class="card">
           <img src="/images/investment.png" alt="" />
           <i class="ri-bar-chart-line"></i>
@@ -87,7 +101,7 @@ export default {};
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   place-items: center;
   position: relative;
@@ -102,10 +116,10 @@ export default {};
   /* box-shadow: 2px 10px 10px rgba(43, 148, 91, 0.97); */
   position: relative;
   margin-top: 1.5rem;
-  min-height: 450px;
+  min-height: 400px;
 }
-.cards .card p{
-min-height: 190px;
+.cards .card p {
+  min-height: 150px;
 }
 .cards .card i {
   padding: 1.5rem;
@@ -127,7 +141,7 @@ min-height: 190px;
 }
 
 .cards .card h4 {
-  margin: 3rem 0 1.5rem;
+  margin: 2rem 0 1.5rem;
   font-size: 24px;
   color: rgb(43, 148, 91);
 }
@@ -147,7 +161,6 @@ min-height: 190px;
   color: #2b945b;
   border: 1px solid #2b945b;
 }
-
 
 .button12 {
   cursor: pointer;
@@ -195,14 +208,14 @@ min-height: 190px;
   right: 23px;
   top: 50%;
   transform: scaleX(0.25);
-   -webkit-transform:scaleX(0.25);
+  -webkit-transform: scaleX(0.25);
   transform-origin: center right;
   transition: all 0.3s ease;
   z-index: 1;
 }
 .button12:before,
 .button12:after {
-  content: '';
+  content: "";
   /* background: #fff; */
   background-color: rgba(255, 255, 255, 0.55);
   color: #2b945b;
@@ -211,7 +224,7 @@ min-height: 190px;
   position: absolute;
   /* border-radius: 8px; */
   transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  -webkit-transition:0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -webkit-transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .button12:before {
   top: 0;
@@ -222,32 +235,30 @@ min-height: 190px;
   bottom: 0;
   right: 0;
   left: auto;
-color: #2b945b;
+  color: #2b945b;
 }
 
 .button12:hover:before {
   width: 100%;
   right: 0;
   left: auto;
-
 }
 .button12:hover:after {
   width: 100%;
   left: 0;
   right: auto;
   color: #2b945b;
-
 }
 
-.button12:hover{
- color: #2b945b;
+.button12:hover {
+  color: #2b945b;
 }
 .button12:hover span {
   color: #000;
 }
 .button12:hover em {
   background: #000;
-  transform: scaleX(.51);
-  transform: scaleX(.51);
+  transform: scaleX(0.51);
+  transform: scaleX(0.51);
 }
 </style>

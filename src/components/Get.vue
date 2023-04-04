@@ -3,14 +3,13 @@
     <div class="grid container">
       <div class="hold no_padding">
         <h2 class="text-h3 q-mb-md find_head text-white text-weight-bold">
-          Manage your food saving budget <br />
-          from your mobile
+          Manage your food saving budget from your mobile
         </h2>
 
         <p class="q-pt-sm find_text q-pb-sm text-white">
-          Download the app to manage your projects, keep track of the <br />
-          progress and complete jobs without procastinating. Stay on track and
-          complete on time!
+          Download the app to manage your projects, keep track of the progress
+          and complete jobs without procastinating. Stay on track and complete
+          on time!
         </p>
 
         <div class="details">
@@ -39,7 +38,7 @@
         </div>
       </div>
       <div class="img">
-        <img src="/images/app.png" alt="" />
+        <img src="/images/mockag.png" alt="" />
       </div>
     </div>
   </div>
@@ -114,31 +113,23 @@ p {
   gap: 2rem;
   align-items: center;
   position: relative;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
 }
 .wrapper {
   position: relative;
-  margin-top: 8rem;
+  margin-top: 1rem;
   background: linear-gradient(76.67deg, #1abc9c 27.62%, #1abc9c 104.81%);
 }
 
 .two {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   width: 100%;
 }
 
 .details {
   position: relative;
-}
-
-.a {
-  position: absolute;
-  top: -60%;
-  right: 50%;
-  width: 150px;
 }
 
 .download {
@@ -158,7 +149,7 @@ p {
 }
 
 .download p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -177,9 +168,7 @@ p {
 }
 
 .img img {
-  position: absolute;
-  width: 100%;
-  bottom: -15%;
+  max-width: 100% !important;
 }
 
 @media (max-width: 1191px) {
@@ -246,9 +235,9 @@ p {
     font-size: 35px;
     line-height: 45px;
   }
-  .img {
+  /* .img {
     height: 220px;
-  }
+  } */
   .det_head {
     margin-top: 2rem;
     margin-bottom: 1rem;

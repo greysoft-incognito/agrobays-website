@@ -10,12 +10,9 @@
             Agrobays
           </h2>
 
-          <p
-            style="font-size: 20px"
-            class="text-body1 lead text-secondary q-mt-lg"
-          >
+          <p class="lead text-secondary q-mt-lg">
             21st Century Agriculture. <br />
-            Exploring agriculture with technology and mechanization.
+            Exploring agriculture with innovative technology.
           </p>
 
           <div class="input-email q-mt-lg">
@@ -30,10 +27,8 @@
       <div class="boxes q-my-lg">
         <div class="boxes-wrap container">
           <q-btn class="btn3" to="/agrofoods">AgroFoods</q-btn>
-
-          <q-btn class="btn3" to="/agrofoods">AgroFarms</q-btn>
-
-          <q-btn class="btn3" to="/agrofoods">AgroTech</q-btn>
+          <q-btn class="btn3" to="/livestock">LiveStock</q-btn>
+          <q-btn class="btn3" to="/agrofoods">Crop Monitoring</q-btn>
         </div>
       </div>
     </div>
@@ -47,7 +42,7 @@ export default {};
 <style scoped>
 .home {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   background: url("https://img.freepik.com/free-photo/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand_335224-761.jpg?size=626&ext=jpg")
     center center/cover no-repeat;
   z-index: 1;
@@ -228,6 +223,10 @@ h5 {
     border-radius: 8px;
     font-size: 14px;
     min-width: 40%;
+  }
+
+  .boxes-wrap {
+    display: none;
   }
 
   .input-email input {

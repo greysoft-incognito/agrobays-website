@@ -3,21 +3,21 @@
     <div class="q-pa-xl bg-primary text-white">
       <div class="row footer-row container">
         <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-          <div class="text-body1">About</div>
+          <div class="">About</div>
           <q-separator class="bg-secondary" style="width: 10%" />
           <div
-            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
+            class="link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
           >
             Home
           </div>
           <div
-            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
+            class="link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrofoods')"
           >
             AgroFoods
           </div>
           <div
-            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
+            class="link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrofarms')"
           >
             AgroFarms
@@ -29,7 +29,7 @@
               Media
             </div> -->
           <div
-            class="text-body1 link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
+            class="link q-mt-md cursor-pointer my-font-montserrat-light text-secondary"
             @click="$router.push('/agrotech')"
           >
             AgroTech
@@ -37,7 +37,7 @@
         </div>
 
         <!-- <div class="col-md-3 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-          <div class="text-body1 my-font-montserrat-light">Resources</div>
+          <div class=" my-font-montserrat-light">Resources</div>
           <q-separator class="bg-secondary" style="width: 50%" />
           <div
             class="
@@ -67,12 +67,12 @@
           </div>
         </div> -->
         <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-          <div class="text-body1 my-font-montserrat-light">Social Media</div>
+          <div class="my-font-montserrat-light">Social Media</div>
           <q-separator class="bg-secondary" style="width: 10%" />
-          <div class="text-body1 q-mt-md cursor-pointer">
+          <div class="q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
-              href="https://www.facebook.com/manzo.maigari"
+              href="https://www.facebook.com/agrobaysng/"
               target="_blank"
             >
               <!-- <q-icon
@@ -85,10 +85,10 @@
               <span class="q-ml-sm my-font-montserrat-light">Facebook</span></a
             >
           </div>
-          <div class="text-body1 q-mt-md cursor-pointer">
+          <div class="q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
-              href="http://twitter.com"
+              href="https://www.twitter.com/agrobaysng/"
               target="_blank"
             >
               <!-- <q-icon
@@ -101,10 +101,10 @@
               <span class="q-ml-sm my-font-montserrat-light">Twitter</span></a
             >
           </div>
-          <div class="text-body1 q-mt-md cursor-pointer">
+          <div class="q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
-              href="https://www.instagram.com/maigarimanzo/"
+              href="https://www.instagram.com/agrobaysng/"
               target="_blank"
             >
               <!-- <q-icon
@@ -120,7 +120,7 @@
           <div class="text-body2 q-mt-md cursor-pointer">
             <a
               class="my-font-montserrat-light text-white text-center"
-              href="https://www.linkedin.com/in/manzo-maigari-a7b4b727/"
+              href="https://www.linkedin.com/agrobaysng/"
               target="_blank"
             >
               <!-- <q-icon
@@ -135,27 +135,49 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 q-pt-md my-font-nav">
-          <div class="text-body1 my-font-montserrat-light">Contact Info</div>
+          <div class="my-font-montserrat-light">Contact Info</div>
           <q-separator class="bg-secondary" style="width: 10%" />
-          <div class="text-body1 my-font-montserrat-light q-mt-md">
+          <div class="my-font-montserrat-light q-mt-md">
             31 Gwari Avenue, Barnawa, Kaduna, Nigeria.
           </div>
-          <div class="text-body1 q-mt-md my-font-montserrat-light">
-            <span>Email: </span>
-            <span class="text-secondary">hi@agrobays.com</span>
+          <div class="q-mt-md my-font-montserrat-light">
+            <a href="mailto:hi@agrobays.com.com">
+              <span class="text-secondary">Email: </span>
+              <span class="text-secondary">hi@agrobays.com</span>
+            </a>
           </div>
-          <div class="text-body1 q-mt-md my-font-montserrat-light">
+          <div class="q-mt-md my-font-montserrat-light">
             <span>Phone: </span>
-            <span class="text-secondary"> +23480 6566 5759</span>,
-            <span class="text-secondary"> +23480 6174 6484 </span>
+            <span class="text-secondary">
+              <a class="text-secondary" href="tel:+23480 6566 5759"
+                >+23480 6566 5759</a
+              > </span
+            >,
+            <span class="text-secondary">
+              <a class="text-secondary" href="tel:+23480 6174 6484"
+                >+23480 6174 6484</a
+              >
+            </span>
           </div>
+          <q-btn
+            class="q-mt-sm text-amber-5"
+            no-caps
+            small
+            outline
+            icon="mail"
+            type="a"
+            href="https://www.agrobays.com/webmail/"
+            target="_blank"
+          >
+            <span class="q-pl-sm">Check Mail</span>
+          </q-btn>
         </div>
       </div>
       <q-separator class="bg-grey-9 q-px-xl q-mt-xl" />
       <div
         class="text-caption text-secondary container my-font-montserrat-light"
       >
-        © 2021 Agrobays. All rights reserved.
+        © {{ new Date().getFullYear() }} Agrobays. All rights reserved.
       </div>
       <div
         class="text-caption text-secondary container my-font-montserrat-light"

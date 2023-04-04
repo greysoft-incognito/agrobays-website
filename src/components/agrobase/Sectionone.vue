@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md q-my-lg">
-    <div class="row align-c text-c q-pt-xl container">
+    <div class="row items-center text-c q-pt-xl container">
       <div class="col-md-6 q-pb-lg col-sm-6 col-xs-12">
         <h2
           style="font-size: 30px"
@@ -43,8 +43,8 @@
           <button class="bg-secondary text-primary btn btn-white">
             View More
           </button> -->
-          <q-btn class="btn2 btn btn-green" to="">Get Started</q-btn>
-          <q-btn class="btn2 btn btn-white" to="">View More</q-btn>
+          <!-- <q-btn class="btn2 btn btn-green" to="">Get Started</q-btn>
+          <q-btn class="btn2 btn btn-white" to="">View More</q-btn> -->
         </div>
       </div>
       <div class="col q-px-lg col-md-6 col-sm-6 col-xs-12 text-center">
@@ -80,16 +80,12 @@ export default {
 }
 
 img {
-  height: 350px;
   border-radius: 10px;
   object-fit: cover;
 }
-
-.align-c {
-  display: flex;
-  align-items: center;
+h2 {
+  line-height: 1.2;
 }
-
 .btn {
   color: #2b945b;
   border: none;

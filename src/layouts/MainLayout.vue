@@ -1,11 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header
-      v-if="$router.currentRoute.value.path !== '/dashboard'"
-      reveal
-      elevated
-      class="bg-secondary text-white"
-    >
+    <q-header reveal elevated class="bg-secondary text-white">
       <div class="row items-center">
         <q-toolbar-title>
           <img class="logo q-pl-md" src="/images/logo1.svg" /> <br />
@@ -21,19 +16,19 @@
             exact
           />
           <q-route-tab
-            label="Livestock"
-            ripple
-            no-caps
-            class="gt-sm text-dark"
-            to="/livestock"
-            exact
-          />
-          <q-route-tab
             label="AgroFoods"
             ripple
             no-caps
             class="gt-sm text-dark"
             to="/agrofoods"
+            exact
+          />
+          <q-route-tab
+            label="Livestock"
+            ripple
+            no-caps
+            class="gt-sm text-dark"
+            to="/livestock"
             exact
           />
 
@@ -69,7 +64,8 @@
               ripple
               no-caps
               class="gt-sm row nowrap items-center text-secondary"
-              href=""
+              to="https://www.google.com"
+              href="https://www.google.com"
               exact
               ><i class="fa-solid fa-mobile"></i
             ></q-route-tab>

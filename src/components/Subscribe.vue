@@ -1,7 +1,7 @@
 <template>
   <div class="how q-mb-xl bg-warning">
     <div class="section bg-primary">
-      <p class="text-center q-py-lg text-secondary" style="font-size: 25px">
+      <p class="text-center q-py-lg text-secondary">
         Subscribe to get exciting news and stories <br />
         of all our works.
       </p>

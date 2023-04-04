@@ -3,7 +3,7 @@
     <div class="wrrap q-pa-lg">
       <div class="row align-c text-c q-pb-xl container">
         <div class="col col-md-6 col-sm-12 col-xs-12 text-center">
-          <p style="font-size: 25px" class="text-body1 text-secondary q-my-xl">
+          <p class="text-secondary q-my-xl">
             Plan, Invest <br />
             and Save with <br />
             <span style="font-size: 28px" class="text-weight-bold"

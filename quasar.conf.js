@@ -19,7 +19,7 @@ module.exports = configure(function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
-    boot: [],
+    boot: ["axios"],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
     css: ["app.scss"],
@@ -132,9 +132,9 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: `agrobase`,
-        short_name: `agrobase`,
-        description: `agrobase project`,
+        name: `Agrobays`,
+        short_name: `Agrobays`,
+        description: `Agrobays project`,
         display: "standalone",
         orientation: "portrait",
         background_color: "#ffffff",

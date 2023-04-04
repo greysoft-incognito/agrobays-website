@@ -9,10 +9,7 @@
           New Opportunities
         </h2>
 
-        <p
-          style="font-size: 25px"
-          class="text-body1 text-center text-secondary q-mt-lg"
-        >
+        <p class="text-center text-secondary q-mt-lg">
           We help people leverage farmimg through Technology
         </p>
 

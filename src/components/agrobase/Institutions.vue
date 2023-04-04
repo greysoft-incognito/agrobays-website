@@ -7,12 +7,11 @@
       >
         Institutions we serve
       </h2>
-      <p class="text-center q-pb-lg q-mb-xl">
+      <p class="text-center p q-pb-lg q-mb-xl">
         We serve a plethora of instutions across Nigeria and our services are
         tailored objectively to meet the unique demands of every client we
-        engage. <br />
-        From private to public institutions, our services carries a mark of
-        excellence and exclusivity.
+        engage. From private to public institutions, our services carries a mark
+        of excellence and exclusivity.
       </p>
       <div class="cards">
         <div class="card">
@@ -45,11 +44,13 @@ export default {};
 </script>
 
 <style scoped>
+p.p {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 200px));
-  /* gap: 1rem; */
-  /* place-items: center; */
   justify-content: center;
   position: relative;
 }

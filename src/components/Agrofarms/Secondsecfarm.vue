@@ -19,17 +19,14 @@
             Small Holder Farmers (SMH)
           </h2>
 
-          <p style="font-size: 20px" class="text-body1 q-mb-md">
+          <p class="q-mb-md">
             Small Holder Farmers (SMH) constitute the majority of farmers in
             Sub-Saharan Africa with handkerchief sized farms designed to feed
             their immediate families. We have engaged in training programs for
             farmers on the need for the practice of large scale farming and the
-            benefits of cooperatives in accessing larger markets. <br />
-            <br />
-
-            Our myriads of SMFs enroll annually in our various out growers
-            scheme projects to farm a variety of crops for local and global
-            markets.
+            benefits of cooperatives in accessing larger markets. Our myriads of
+            SMFs enroll annually in our various out growers scheme projects to
+            farm a variety of crops for local and global markets.
           </p>
 
           <!-- <button class="text-secondary btn">Get started</button> -->
@@ -59,6 +56,7 @@ img {
   width: 90%;
   object-fit: contain;
   border-radius: 20px;
+  max-width: 400px;
 }
 
 .btn {

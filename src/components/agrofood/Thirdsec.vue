@@ -9,33 +9,33 @@
           Get Food Bag
         </h2>
 
-        <p style="font-size: 20px" class="text-body1 text-secondary q-mt-lg">
+        <p class="text-secondary q-mt-lg">
           Select your desired Food Bag from the list and choose delivery option,
           Pickup or Home Delivery.
         </p>
 
-        <button class="text-secondary btn">Get started</button>
+        <button @click="goto" class="text-secondary btn">Get started</button>
       </div>
       <div class="col col-md-6 col-sm-12 col-xs-12 text-center">
         <img src="/images/agrofood2.png" />
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    goto() {
+      document.getElementById("get").scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style scoped>
 img {
-  width: 70%;
+  width: 50%;
 }
 .align-c {
   display: flex;

@@ -1,7 +1,7 @@
 <template>
-  <div class="q-pa-md sec q-my-xl">
-    <div class="row align-c text-c container">
-      <div class="col-md-6 col-sm-12 q-mb-xl col-xs-12">
+  <div class="sec">
+    <div class="row items-center text-c container">
+      <div class="col-md-6 col-sm-6 q-mb-xl col-xs-12">
         <h2
           style="font-size: 50px"
           class="text-h2 q-my-lg text-weight-bold text-primary"
@@ -15,7 +15,7 @@
           <span class="text-accent">Eat</span> like an <span>Elephant</span>
         </div>
 
-        <p style="font-size: 20px" class="text-body1 q-mt-lg">
+        <p style="font-size: 20px" class="q-mt-lg">
           Amazing how little drops of water make <br />
           a mighty ocean? Get a
           <span class="text-primary text-bold">Food Bag</span> every 30days
@@ -24,7 +24,7 @@
         </p>
 
         <div>
-          <div style="font-size: 20px" class="text-body1 q-mt-lg">
+          <div style="font-size: 18px" class="q-mt-lg">
             Book weekly delivery of the best
             <span class="text-primary text-bold q-mr-md">
               Fruits & Veggies</span
@@ -36,14 +36,14 @@
           </div>
         </div>
 
-        <div class="input-email q-mt-lg">
+        <!-- <div class="input-email q-mt-lg">
           <div class="input q-px-lg">
             <input placeholder="Enter your email " type="text" />
             <button class="text-secondary">Start Saving</button>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="col col-md-6 col-sm-12 col-xs-12">
+      <div class="col col-md-6 col-sm-6 col-xs-12">
         <img class="img" src="/images/Group.png" />
       </div>
     </div>
@@ -74,9 +74,8 @@ h5 span.skew::after {
   color: #ffff;
   background-color: #2b945b;
 }
-.align-c {
-  display: flex;
-  align-items: center;
+.sec {
+  padding-top: 6rem;
 }
 
 h5 {

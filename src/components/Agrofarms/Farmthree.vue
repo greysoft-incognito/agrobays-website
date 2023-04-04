@@ -9,7 +9,7 @@
           Livestock Farm
         </h2>
 
-        <p style="font-size: 20px" class="text-body1 q-mt-lg">
+        <p class="q-mt-lg">
           Agrobays has various livestock farms of small rumnants, piggery,
           poultry and cattles that are grown for meat, diary, eggs and leather.
           Our patnership with global agric institutioins has helped us maintain
@@ -22,15 +22,9 @@
         </button> -->
       </div>
       <div class="col col-md-6 col-sm-6 col-xs-12 text-center">
-        <img src="/images/agrofarm5.png" />
+        <img src="/images/cow.jpeg" />
       </div>
     </div>
-
-    <!-- <div class="row">
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-      <div class="col">.col</div>
-    </div> -->
   </div>
 </template>
 
@@ -44,6 +38,11 @@ export default {};
   align-items: center;
 }
 
+img {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
 .btn {
   border: none;
   background: linear-gradient(121.81deg, #2b945b 20.1%, #8bc34a 131.87%);
@@ -55,9 +54,6 @@ export default {};
 .btn-white {
   margin-left: 1rem;
   border: 1px solid #2b945b;
-}
-
-@media (max-width: 400px) {
 }
 
 @media (max-width: 520px) {

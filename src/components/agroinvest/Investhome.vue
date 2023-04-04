@@ -9,10 +9,7 @@
           AgroInvest
         </h2>
 
-        <p
-          style="font-size: 25px"
-          class="text-body1 text-center text-secondary q-mt-lg"
-        >
+        <p class="text-center text-secondary q-mt-lg">
           Amazing how little drops of water make <br />
           a mighty ocean? Get food every 30days <br />
           you never knew you were saving for!

@@ -7,7 +7,7 @@
       Our Plans
     </h2>
 
-    <p style="font-size: 17px" class="q-px-xl text-center text-body1">
+    <p class="q-px-xl text-center">
       Our plans are tailored to help various class of earners find satisfaction
       using our service. <br />
       Whether you are a low, medium or high income earner, you can choose a
@@ -20,7 +20,7 @@
         <div class="holderr">
           <div class="hold">
             <h6 class="text-primary">₦300 Plan</h6>
-            <p style="font-size: 16px" class="text-body1">
+            <p class="">
               Choose a comfortable plan of ₦300 per which would sum up to ₦9,000
               of 30 days saving. A food bag worth ₦9,000 with various food items
               would be delivered to you.
@@ -28,7 +28,7 @@
           </div>
           <div class="hold">
             <h6 class="text-primary">₦500 Plan</h6>
-            <p style="font-size: 16px" class="text-body1">
+            <p class="">
               Choose a comfortable plan of ₦500 per which would sum up to ₦
               15,000 of 30 days saving. A food bag worth ₦15,000 with various
               food items would be delivered to you.
@@ -36,7 +36,7 @@
           </div>
           <div class="hold">
             <h6 class="text-primary">₦1000 Plan</h6>
-            <p style="font-size: 16px" class="text-body1">
+            <p class="">
               Choose a comfortable plan of ₦1000 per which would sum up to
               ₦30,000 of 30 days saving. A food bag worth ₦30,000 with various
               food items would be delivered to you.

@@ -35,37 +35,10 @@ button {
   min-width: 20px !important;
 }
 
-/* .hold {
-  margin: 1rem 0 1rem;
-} */
-
-.profile-imgg .uppy-container {
-  margin: 0 !important;
-}
-
-.cartholddiv {
-  overflow: visible !important;
-}
-
 .acc-btn {
   display: flex;
   width: 80px !important;
   align-items: center;
-}
-.q-tab__label {
-  font-size: 13px;
-  line-height: 1.715em;
-  font-weight: 500;
-}
-.q-tab__indicator {
-  display: none;
-}
-.glossy {
-  background-image: none !important;
-}
-
-.bg-teal {
-  background: none !important;
 }
 
 .q-btn .q-icon,
@@ -117,6 +90,14 @@ li {
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+  .container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .q-router-link--exact-active .wrapp i {

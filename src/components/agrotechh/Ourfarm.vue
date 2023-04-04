@@ -6,7 +6,7 @@
       >
         Our Farm Technologies
       </h2>
-      <p style="font-size: 18px" class="text-center q-pa-md text-secondary">
+      <p class="text-center q-pa-md text-secondary">
         Viverra ut potenti aliquam feugiat dui imperdiet <br />
         laoreet tempus sed.Elit cursus est lorem in est id nec. <br />
         Quis diam posuere at nisl eget turpis <br />
@@ -103,7 +103,7 @@
         <!-- <img src="/images/agrotec.png" alt="" /> -->
         <!-- <div id="q-app">
         <div class="q-pa-xl row justify-center">
-            Button component started here 
+            Button component started here
           <q-btn
             color="primary"
             flat
@@ -111,7 +111,7 @@
             icon-right="mail"
             label="Hover Me!"
           >
-              Menu components started here 
+              Menu components started here
             <q-menu v-model="hello" @mouseleave="hello = false" fit>
               <q-list style="min-width: 100px">
                 <q-item clickable>
