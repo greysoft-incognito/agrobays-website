@@ -16,7 +16,9 @@
           <p class="det_head">Download Agrobays App</p>
 
           <div class="two">
-            <a href=""
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=org.greysoft.agrobays.app"
               ><div class="download">
                 <i class="ri-google-play-line"></i>
                 <div class="det q-ml-md">

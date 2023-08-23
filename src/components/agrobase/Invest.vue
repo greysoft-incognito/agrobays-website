@@ -2,7 +2,7 @@
   <div class="q-pa-lg services q-my-lg">
     <div class="wrrap q-pa-lg">
       <div class="row align-c text-c q-pb-xl container">
-        <div class="col col-md-6 col-sm-12 col-xs-12 text-center">
+        <div class="col col-md-6 col-sm-6 col-xs-12 text-center">
           <p class="text-secondary q-my-xl">
             Plan, Invest <br />
             and Save with <br />
@@ -11,7 +11,7 @@
             >
           </p>
         </div>
-        <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <p class="text-secondary">Invest in your convenience</p>
           <div class="input-email q-mt-sm">
             <div class="input">

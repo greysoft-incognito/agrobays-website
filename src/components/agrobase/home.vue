@@ -14,13 +14,22 @@
             21st Century Agriculture. <br />
             Exploring agriculture with innovative technology.
           </p>
-
-          <div class="input-email q-mt-lg">
-            <div class="input q-px-lg">
-              <input placeholder="Enter your email" type="text" />
-              <button class="text-secondary">Register</button>
+          <form @submit.prevent="submit">
+            <div class="input-email q-mt-lg">
+              <div class="input q-px-lg">
+                <input
+                  v-model="data.email"
+                  required
+                  name="email"
+                  placeholder="Enter your email"
+                  type="text"
+                />
+                <q-btn :loading="loading" type="submit" class="text-secondary"
+                  >Register</q-btn
+                >
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
 
@@ -36,7 +45,51 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      data: {},
+      loading: false,
+      errors: [],
+    };
+  },
+  methods: {
+    submit() {
+      // this.$q.loading.show();
+      this.loading = true;
+
+      this.$axios
+        .post(
+          "https://kadinvest-multiverse.greysoft.com.ng/api/v1/get/form-data/3",
+          { data: this.data }
+        )
+        .then((resp) => {
+          // this.$q.loading.hide();
+          this.loading = false;
+          console.log(resp);
+          this.$q.notify({
+            message: "Your submission was successful",
+            color: "green",
+            position: "top",
+            timeout: 3000,
+          });
+
+          this.data = {};
+        })
+        .catch(({ response }) => {
+          // this.$q.loading.hide();
+          // this.errors = response.data.errors;
+          this.$q.notify({
+            message: response.data.message
+              ? response.data.message
+              : "An error occured",
+            color: "red",
+            position: "top",
+          });
+        });
+    },
+  },
+};
 </script>
 
 <style scoped>

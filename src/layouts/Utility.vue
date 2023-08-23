@@ -59,9 +59,15 @@
             </li>
 
             <li>
-              <q-btn color="primary" class="navbar-link" data-nav-link>
-                Download App
-              </q-btn>
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=org.greysoft.agrobays.app"
+                color="primary"
+                class="navbar-link btn_link"
+                data-nav-link
+              >
+                <i class="fa-brands fa-android"></i> Download App
+              </a>
             </li>
           </ul>
         </nav>
@@ -389,8 +395,16 @@ a {
   transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
+.navbar-link.btn_link {
+  background: #2b945b;
+  color: #fff;
+  border-radius: 8px;
+}
+.navbar-link.btn_link:hover {
+  color: #fff;
+}
 
-.navbar-link :hover {
+.navbar-link:hover {
   color: #2b945b;
 }
 

@@ -8,7 +8,7 @@
         <h2 class="text-primary text-h4 q-pa-md text-weight-bold">
           Steps to enjoy an unlimited food supply.
         </h2>
-        <p class="text-positive">
+        <p class="text-positive q-mx-md">
           Follow the instructions for a feeding plan that works.
         </p>
       </div>

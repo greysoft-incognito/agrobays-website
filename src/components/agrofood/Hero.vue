@@ -2,17 +2,17 @@
   <div class="sec">
     <div class="row items-center text-c container">
       <div class="col-md-6 col-sm-6 q-mb-xl col-xs-12">
-        <h2
+        <!-- <h2
           style="font-size: 50px"
           class="text-h2 q-my-lg text-weight-bold text-primary"
         >
           AgroFoods
-        </h2>
-        <div class="text-h3 text-dark text-weight-bold">
-          <span class="text-accent">Save</span> like an Ant,
+        </h2> -->
+        <div class="text-h3 q-pt-xl text-dark text-weight-bold">
+          <span class="text-primary">Save</span> like an Ant,
         </div>
         <div class="text-h3 text-dark text-weight-bold">
-          <span class="text-accent">Eat</span> like an <span>Elephant</span>
+          <span class="text-primary">Eat</span> like an <span>Elephant</span>
         </div>
 
         <p style="font-size: 20px" class="q-mt-lg">

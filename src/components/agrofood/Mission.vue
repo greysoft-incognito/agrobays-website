@@ -9,7 +9,7 @@
     </div> -->
 
     <div class="row align-c text-c q-pt-xl container">
-      <div class="col-md-6 col-sm-12 q-my-lg col-xs-12">
+      <div class="col-md-6 col-sm-6 q-my-lg col-xs-12">
         <h2
           style="font-size: 40px"
           class="text-h3 q-my-lg text-weight-bold text-primary"
@@ -47,8 +47,8 @@
           </div>
         </div>
       </div>
-      <div class="col col-md-6 text-center col-sm-12 col-xs-12">
-        <img src="/images/frame.png" />
+      <div class="col col-md-6 text-center col-sm-6 col-xs-12">
+        <img src="/images/frame2.png" />
       </div>
     </div>
   </div>

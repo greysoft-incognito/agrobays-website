@@ -25,13 +25,13 @@
         <img src="/images/pngwing 1.png" alt="" class="sponsor__img" />
       </div>
       <div class="sponsor__content">
-        <img src="/images/Group 34637.png" alt="" class="sponsor__img" />
+        <img src="/images/group 34637.png" alt="" class="sponsor__img" />
       </div>
       <div class="sponsor__content">
         <img src="/images/ibm.png" alt="" class="sponsor__img" />
       </div>
       <div class="sponsor__content">
-        <img src="/images/Frame 38251.png" alt="" class="sponsor__img" />
+        <img src="/images/frame 38251.png" alt="" class="sponsor__img" />
       </div>
     </div>
   </section>

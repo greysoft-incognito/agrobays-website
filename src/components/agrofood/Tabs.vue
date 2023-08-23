@@ -6,22 +6,26 @@
           <i class="fa-solid fa-eye"></i>
           <h4 class="text-weight-bold text-primary q-mb-md">Vision</h4>
           <p>
-            Attractive agriculture for everyone which leverages technology and
-            mechanization for improved productivity and economic prosperity.
+            Technical Driven Agriculture
+            <!-- Exploring agriculture with innovative technology for sustainable
+            development. -->
+            <!-- Attractive agriculture for everyone which leverages technology and
+            mechanization for improved productivity and economic prosperity. -->
           </p>
         </div>
         <div class="one card">
           <i class="fa-solid fa-arrows-to-circle"></i>
           <h4 class="text-weight-bold text-primary q-mb-md">Mission</h4>
           <p>
-            Promote technology driven and mechanized farming to attract young
+            Empowering Agricultural Value Chains through Technology
+            <!-- Promote technology driven and mechanized farming to attract young
             farmers, improve accuracy in decision making, mitigate risk and
-            improve yield.
+            improve yield. -->
           </p>
         </div>
         <div class="one card">
           <i class="fa-solid fa-scale-balanced"></i>
-          <h4 class="text-weight-bold text-primary q-mb-md">Vision</h4>
+          <h4 class="text-weight-bold text-primary q-mb-md">Values</h4>
           <p>
             People <br />
             Innovation <br />

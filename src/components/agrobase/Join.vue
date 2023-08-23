@@ -19,7 +19,7 @@
       </div>
       <div class="col-md-6 col-sm-6 col-xs-12">
         <p class="q-my-xl">To be a member of our community sign up</p>
-        <form @submit.prevent="join">
+        <form @submit.prevent="submit" id="appForm">
           <div class="input-wrap">
             <label class="text-primary" for="">Full Name</label> <br />
 
@@ -27,7 +27,7 @@
               <i class="fa-solid q-mr-sm fa-user text-primary"></i>
               <input
                 required
-                v-model="data.name"
+                v-model="data.fullname"
                 type="text"
                 name="name"
                 placeholder="Farmers Full Name"
@@ -59,7 +59,7 @@
               <input
                 required
                 name="phone"
-                v-model="data.phoneNumber"
+                v-model="data.phone"
                 type="tel"
                 placeholder="Enter phone number"
               />
@@ -81,7 +81,9 @@
             </div>
           </div>
 
-          <q-btn type="submit" class="text-secondary btn">Join</q-btn>
+          <q-btn :loading="loading" type="submit" class="text-secondary btn"
+            >Join</q-btn
+          >
         </form>
       </div>
     </div>
@@ -94,22 +96,53 @@ export default {
   data() {
     return {
       data: {},
+      loading: false,
     };
   },
+
   methods: {
-    join() {
-      console.log(this.data);
-      fetch("http://localhost:5000/api/posts", {
-        method: "POST",
-        body: this.data,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }).then((response) => {
-        console.log("hey", response).catch((err) => {
-          console.log(err);
+    // get() {
+    //   this.$api
+    //     .get("get/forms")
+    //     .then((resp) => {
+    //       console.log(resp);
+    //     })
+    //     .catch(({ response }) => {
+    //       this.loading = false;
+    //     });
+    // },
+    submit() {
+      // this.$q.loading.show();
+      this.loading = true;
+
+      this.$api
+        .post("get/form-data/3", { data: this.data })
+        .then((resp) => {
+          // this.$q.loading.hide();
+          this.loading = false;
+
+          console.log(resp);
+          this.$q.notify({
+            message: "Your submission was successful",
+            color: "green",
+            position: "top",
+            timeout: 3000,
+          });
+
+          this.data = {};
+
+          document.getElementById("appForm").reset();
+        })
+        .catch(({ response }) => {
+          this.loading = false;
+          this.$q.notify({
+            message: response.data.message
+              ? response.data.message
+              : "An error occured",
+            color: "red",
+            position: "top",
+          });
         });
-      });
     },
   },
 };

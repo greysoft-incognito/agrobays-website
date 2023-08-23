@@ -2,10 +2,10 @@
   <div class="q-pa-md">
     <div class="top container">
       <div class="row align-c flexx text-c">
-        <div class="col col-md-6 col-sm-12 col-xs-12 q-py-xl">
+        <div class="col col-md-6 col-sm-6 col-xs-12 q-py-xl">
           <img src="/images/agrofood1.png" />
         </div>
-        <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-12">
           <h2
             style="font-size: 40px"
             class="text-h3 q-my-lg text-weight-bold text-primary"
